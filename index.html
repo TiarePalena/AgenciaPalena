@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Palena - Comunicaciones y Marketing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS - Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__inner">
+            <div class="preloader__logo">
+                <span>P<span style="display:inline-block;transform:scaleY(-1) translateY(3px)">A</span>LEN<span style="display:inline-block;transform:scaleY(-1) translateY(3px)">A</span></span><span style="color:#8bc34a">.</span>
+            </div>
+            <div class="preloader__bar">
+                <div class="preloader__progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CURSOR CUSTOM (desktop) -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Skip to content -->
+    <a href="#main" class="skip-link">Saltar al contenido</a>
+
+    <!-- NAVIGATION -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <div class="logo-mark">
+                    <span class="logo-text">P<span class="logo-a">A</span>LEN<span class="logo-a">A</span></span><span class="logo-dot">.</span>
+                </div>
+                <span class="logo-tagline">TODO ES MEJOR <strong>CON PALENA</strong></span>
+            </a>
+            <div class="nav__toggle" id="nav-toggle">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FULLSCREEN MENU OVERLAY -->
+    <div class="menu-overlay" id="nav-menu">
+        <div class="menu-overlay__header container">
+            <a href="#" class="nav__logo nav__logo--menu">
+                <div class="logo-mark">
+                    <span class="logo-text logo-text--white">P<span class="logo-a">A</span>LEN<span class="logo-a">A</span></span><span class="logo-dot">.</span>
+                </div>
+                <span class="logo-tagline logo-tagline--white">TODO ES MEJOR <strong>CON PALENA</strong></span>
+            </a>
+            <div class="nav__close" id="nav-close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="menu-overlay__content">
+            <ul class="menu-overlay__list">
+                <li class="menu-overlay__item"><a href="#home" class="menu-overlay__link">Home<span class="menu-dot">.</span></a></li>
+                <li class="menu-overlay__item"><a href="#about" class="menu-overlay__link">Quiénes Somos<span class="menu-dot">.</span></a></li>
+                <li class="menu-overlay__item"><a href="#services" class="menu-overlay__link">Servicios<span class="menu-dot">.</span></a></li>
+                <li class="menu-overlay__item"><a href="#experience" class="menu-overlay__link">Experiencia<span class="menu-dot">.</span></a></li>
+                <li class="menu-overlay__item"><a href="#contact" class="menu-overlay__link">Contacto<span class="menu-dot">.</span></a></li>
+            </ul>
+            <div class="menu-overlay__social">
+                <a href="https://instagram.com/agenciapalena" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.linkedin.com/company/agencia-palena-cl/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+        <div class="menu-overlay__side">
+            <span class="menu-overlay__vertical">hablemos</span>
+        </div>
+    </div>
+
+    <main id="main">
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="hero__bg">
+                <video class="hero__video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80">
+                    <source src="https://cdn.coverr.co/videos/coverr-team-working-in-an-office-7718/1080p.mp4" type="video/mp4">
+                </video>
+                <div class="hero__overlay"></div>
+            </div>
+            <!-- Floating particles -->
+            <div class="particles" id="particles"></div>
+
+            <div class="hero__content container">
+                <span class="hero__subtitle" data-aos="fade-right" data-aos-duration="800">WHAT WE DO</span>
+                <h1 class="hero__title">
+                    <span class="hero__title-line" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Somos una Agencia de</span><br>
+                    <span class="hero__title-line" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Comunicaciones y Marketing</span>
+                </h1>
+                <p class="hero__description" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    Nuestro equipo está compuesto por un grupo experimentado de periodistas, 
+                    especialistas en marketing digital y profesionales audiovisuales que buscan crecer en 
+                    el mercado local. Somos una agencia joven y creativa, comprometida con las comunicaciones 
+                    verdes y medioambientales.
+                </p>
+                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                    <a href="#contact" class="btn btn--primary">
+                        <span>contact us</span>
+                        <i class="fas fa-arrow-right btn__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-indicator__mouse">
+                    <div class="scroll-indicator__wheel"></div>
+                </div>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <!-- ABOUT / SERVICES INTRO -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__grid">
+                    <div class="about__content" data-aos="fade-right" data-aos-duration="1000">
+                        <span class="section__label">QUIÉNES SOMOS</span>
+                        <h2 class="section__title">Comunicaciones<br>Creativas</h2>
+                        <div class="section__divider"></div>
+                        <p class="about__text">
+                            Buscamos generar estrategias comunicacionales que impacten en los negocios de nuestros clientes. 
+                            Nuestro equipo de profesionales son expertos en cada tipo de servicio.
+                        </p>
+                        <p class="about__text">
+                            Entregamos servicios personalizados, sumamente creativos con foco en obtención de resultados.
+                        </p>
+                    </div>
+                    <div class="about__image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="about__img-wrapper">
+                            <img src="https://agenciapalta.cl/wp-content/uploads/2024/06/A_EquipoNew-e1718134528477-1536x995.jpg" 
+                                 alt="Equipo Agencia Palena" loading="lazy">
+                            <div class="about__img-float about__img-float--1"></div>
+                            <div class="about__img-float about__img-float--2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="services__header" data-aos="fade-up" data-aos-duration="800">
+                    <span class="section__label section__label--center">NUESTROS SERVICIOS</span>
+                    <h2 class="section__title section__title--center">Lo que hacemos</h2>
+                    <div class="section__divider section__divider--center"></div>
+                </div>
+                <div class="services__grid">
+                    <div class="service__card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+                        <div class="service__icon-wrapper">
+                            <div class="service__icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <div class="service__icon-bg"></div>
+                        </div>
+                        <h3 class="service__title">Digital</h3>
+                        <p class="service__desc">Estrategias digitales integrales para tu marca</p>
+                        <div class="service__line"></div>
+                    </div>
+                    <div class="service__card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+                        <div class="service__icon-wrapper">
+                            <div class="service__icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="service__icon-bg"></div>
+                        </div>
+                        <h3 class="service__title">Analytics</h3>
+                        <p class="service__desc">Medición y análisis de datos para decisiones inteligentes</p>
+                        <div class="service__line"></div>
+                    </div>
+                    <div class="service__card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                        <div class="service__icon-wrapper">
+                            <div class="service__icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="service__icon-bg"></div>
+                        </div>
+                        <h3 class="service__title">Influencers</h3>
+                        <p class="service__desc">Conexión con influenciadores clave del mercado</p>
+                        <div class="service__line"></div>
+                    </div>
+                    <div class="service__card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
+                        <div class="service__icon-wrapper">
+                            <div class="service__icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="service__icon-bg"></div>
+                        </div>
+                        <h3 class="service__title">Brand & Corp PR</h3>
+                        <p class="service__desc">Relaciones públicas corporativas y de marca</p>
+                        <div class="service__line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="stats" id="stats">
+            <div class="stats__bg-shapes">
+                <div class="stats__shape stats__shape--1"></div>
+                <div class="stats__shape stats__shape--2"></div>
+                <div class="stats__shape stats__shape--3"></div>
+            </div>
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="0">
+                        <div class="stat__circle">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="stat__circle-bg" cx="50" cy="50" r="45"/>
+                                <circle class="stat__circle-fill" cx="50" cy="50" r="45" data-percent="87"/>
+                            </svg>
+                        </div>
+                        <span class="stat__number" data-target="3501">0</span>
+                        <h3 class="stat__title">Publicaciones gestionadas en prensa</h3>
+                    </div>
+                    <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="150">
+                        <div class="stat__circle">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="stat__circle-bg" cx="50" cy="50" r="45"/>
+                                <circle class="stat__circle-fill" cx="50" cy="50" r="45" data-percent="72"/>
+                            </svg>
+                        </div>
+                        <span class="stat__number" data-target="2006">0</span>
+                        <h3 class="stat__title">Contenidos generados para RRSS</h3>
+                    </div>
+                    <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                        <div class="stat__circle">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="stat__circle-bg" cx="50" cy="50" r="45"/>
+                                <circle class="stat__circle-fill" cx="50" cy="50" r="45" data-percent="55"/>
+                            </svg>
+                        </div>
+                        <span class="stat__number" data-target="148">0</span>
+                        <h3 class="stat__title">Entrevistas gestionadas en prensa</h3>
+                    </div>
+                    <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="450">
+                        <div class="stat__circle">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="stat__circle-bg" cx="50" cy="50" r="45"/>
+                                <circle class="stat__circle-fill" cx="50" cy="50" r="45" data-percent="93"/>
+                            </svg>
+                        </div>
+                        <span class="stat__number" data-target="812">0</span>
+                        <h3 class="stat__title">Producciones audiovisuales para marcas</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE / CLIENTS -->
+        <section class="experience" id="experience">
+            <div class="container">
+                <div data-aos="fade-up" data-aos-duration="800">
+                    <span class="section__label section__label--center">NUESTROS CLIENTES</span>
+                    <h2 class="section__title section__title--center">Experiencia</h2>
+                    <div class="section__divider section__divider--center"></div>
+                </div>
+
+                <!-- Infinite client marquee -->
+                <div class="clients__marquee" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="clients__track">
+                        <div class="client__logo">
+                            <img src="https://agenciapalta.cl/wp-content/uploads/2023/08/clientes-palta-logo-macarena-club.png" alt="Macarena Club" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="https://agenciapalta.cl/wp-content/uploads/2023/05/clientes-palta-logos-editados-03-1.png" alt="Cliente LG" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="https://agenciapalta.cl/wp-content/uploads/2023/05/clientes-palta-logos-editados-04-1.png" alt="Cliente Diplas" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="https://agenciapalta.cl/wp-content/uploads/2023/05/clientes-palta-logos-editados-07-1.png" alt="Clínica Ginestetica" loading="lazy">
+                        </div>
+                        <!-- Duplicados para loop infinito -->
+                        <div class="client__logo">
+                            <img src="https://agenciapalta.cl/wp-content/uploads/2023/08/clientes-palta-logo-macarena-club.png" alt="Macarena Club" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="https://agenciapalta.cl/wp-content/uploads/2023/05/clientes-palta-logos-editados-03-1.png" alt="Cliente LG" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="https://agenciapalta.cl/wp-content/uploads/2023/05/clientes-palta-logos-editados-04-1.png" alt="Cliente Diplas" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="https://agenciapalta.cl/wp-content/uploads/2023/05/clientes-palta-logos-editados-07-1.png" alt="Clínica Ginestetica" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta" id="contact">
+            <div class="cta__parallax-bg"></div>
+            <div class="container">
+                <div class="cta__content">
+                    <div class="cta__icon" data-aos="flip-left" data-aos-duration="800" data-aos-delay="200">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h4 class="cta__text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        Nuestro equipo ha liderado grandes casos de éxito en nuestro pasado, siendo reconocidos 
+                        a nivel nacional e internacional por múltiples campañas de comunicación.
+                    </h4>
+                    <h4 class="cta__highlight" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                        ¿Quieres lograr tu próximo éxito? ¡Hablemos!
+                    </h4>
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+                        <a href="mailto:contacto@agenciapalena.cl" class="btn btn--glow">
+                            <span>Conversemos</span>
+                            <i class="fas fa-paper-plane btn__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand" data-aos="fade-right" data-aos-duration="600">
+                    <div class="footer__logo">
+                        <div class="logo-mark">
+                            <span class="logo-text logo-text--white">P<span class="logo-a">A</span>LEN<span class="logo-a">A</span></span><span class="logo-dot">.</span>
+                        </div>
+                    </div>
+                    <p class="footer__tagline">Agencia Palena. Todo es mejor con Palena.</p>
+                </div>
+                <div class="footer__social" data-aos="fade-left" data-aos-duration="600">
+                    <a href="https://instagram.com/agenciapalena" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/agencia-palena-cl/" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy;2026 Agencia Palena. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- FLOATING CONTACT BUTTON -->
+    <a href="#contact" class="floating-contact" aria-label="Contact us">
+        <span>contact us</span>
+    </a>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        // ===== PRELOADER =====
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.classList.add('preloader--hidden');
+                document.body.classList.add('loaded');
+            }, 1800);
+        });
+
+        // ===== AOS INIT =====
+        AOS.init({
+            once: true,
+            offset: 80,
+            easing: 'ease-out-cubic'
+        });
+
+        // ===== CUSTOM CURSOR =====
+        const cursor = document.getElementById('cursor');
+        const follower = document.getElementById('cursor-follower');
+        let mouseX = 0, mouseY = 0, posX = 0, posY = 0;
+
+        if (window.innerWidth > 768) {
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                cursor.style.left = mouseX + 'px';
+                cursor.style.top = mouseY + 'px';
+            });
+
+            function animateCursor() {
+                posX += (mouseX - posX) * 0.1;
+                posY += (mouseY - posY) * 0.1;
+                follower.style.left = posX + 'px';
+                follower.style.top = posY + 'px';
+                requestAnimationFrame(animateCursor);
+            }
+            animateCursor();
+
+            document.querySelectorAll('a, button, .service__card').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursor.classList.add('cursor--active');
+                    follower.classList.add('cursor-follower--active');
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('cursor--active');
+                    follower.classList.remove('cursor-follower--active');
+                });
+            });
+        }
+
+        // ===== PARTICLES =====
+        (function createParticles() {
+            const container = document.getElementById('particles');
+            for (let i = 0; i < 35; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                const size = Math.random() * 6 + 2;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 8) + 's';
+                particle.style.opacity = Math.random() * 0.4 + 0.1;
+                container.appendChild(particle);
+            }
+        })();
+
+        // ===== MOBILE NAV TOGGLE =====
+        const navToggle = document.getElementById('nav-toggle');
+        const navClose = document.getElementById('nav-close');
+        const navMenu = document.getElementById('nav-menu');
+        const menuLinks = document.querySelectorAll('.menu-overlay__link');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.add('show-menu');
+            document.body.style.overflow = 'hidden';
+        });
+
+        function closeMenu() {
+            navMenu.classList.remove('show-menu');
+            document.body.style.overflow = '';
+        }
+
+        navClose.addEventListener('click', closeMenu);
+        menuLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+        // ===== HEADER SCROLL EFFECT =====
+        const header = document.getElementById('header');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            header.classList.toggle('scroll-header', scrollY >= 50);
+            if (scrollY > 400) {
+                header.classList.toggle('header--hidden', scrollY > lastScroll);
+            } else {
+                header.classList.remove('header--hidden');
+            }
+            lastScroll = scrollY;
+        });
+
+        // ===== ACTIVE LINK ON SCROLL =====
+        const sections = document.querySelectorAll('section[id]');
+        window.addEventListener('scroll', () => {
+            const scrollY = window.pageYOffset;
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 120;
+                const sectionId = section.getAttribute('id');
+                const link = document.querySelector('.nav__link[href*="' + sectionId + '"]');
+                if (link) {
+                    link.classList.toggle('active', scrollY > sectionTop && scrollY <= sectionTop + sectionHeight);
+                }
+            });
+        });
+
+        // ===== COUNTER ANIMATION =====
+        const counters = document.querySelectorAll('.stat__number');
+        let countersStarted = false;
+
+        function easeOutQuart(t) { return 1 - Math.pow(1 - t, 4); }
+
+        function startCounters() {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const duration = 2500;
+                const startTime = performance.now();
+
+                const update = (now) => {
+                    const progress = Math.min((now - startTime) / duration, 1);
+                    counter.textContent = Math.ceil(easeOutQuart(progress) * target).toLocaleString();
+                    if (progress < 1) requestAnimationFrame(update);
+                };
+                requestAnimationFrame(update);
+            });
+
+            // Animate SVG circles
+            document.querySelectorAll('.stat__circle-fill').forEach(circle => {
+                const percent = circle.getAttribute('data-percent');
+                const circumference = 2 * Math.PI * 45;
+                circle.style.strokeDasharray = circumference;
+                circle.style.strokeDashoffset = circumference;
+                setTimeout(() => {
+                    circle.style.strokeDashoffset = circumference - (circumference * percent / 100);
+                }, 300);
+            });
+        }
+
+        const statsSection = document.getElementById('stats');
+        new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !countersStarted) {
+                    countersStarted = true;
+                    startCounters();
+                }
+            });
+        }, { threshold: 0.3 }).observe(statsSection);
+
+        // ===== SMOOTH SCROLL =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // ===== PARALLAX =====
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const heroBg = document.querySelector('.hero__bg');
+            if (heroBg) heroBg.style.transform = 'translateY(' + (scrollY * 0.35) + 'px)';
+
+            document.querySelectorAll('.stats__shape').forEach((shape, i) => {
+                const speed = (i + 1) * 0.04;
+                shape.style.transform = 'translateY(' + (scrollY * speed) + 'px) rotate(' + (scrollY * speed * 2) + 'deg)';
+            });
+        });
+
+        // ===== MAGNETIC BUTTONS =====
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mousemove', function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                this.style.transform = 'translate(' + (x * 0.15) + 'px, ' + (y * 0.15) + 'px)';
+            });
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translate(0, 0)';
+            });
+        });
+
+        // ===== TILT ON SERVICE CARDS =====
+        document.querySelectorAll('.service__card').forEach(card => {
+            card.addEventListener('mousemove', function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+                this.style.transform = 'perspective(1000px) rotateX(' + ((0.5 - y) * 12) + 'deg) rotateY(' + ((x - 0.5) * 12) + 'deg) translateY(-8px)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+            });
+        });
+
+        // ===== BACK TO TOP =====
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('show', window.scrollY > 500);
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
