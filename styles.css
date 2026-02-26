@@ -185,7 +185,7 @@ img { max-width: 100%; height: auto; display: block; }
     display: inline-block;
     font-size: var(--font-size-xs);
     font-weight: 700;
-    color: var(--color-primary);
+    color: #9346b6;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 0.75rem;
@@ -200,7 +200,7 @@ img { max-width: 100%; height: auto; display: block; }
 .section__title {
     font-size: var(--font-size-4xl);
     font-weight: 800;
-    color: var(--color-primary-dark);
+    color: #74ed00;
     margin-bottom: 1rem;
     line-height: 1.15;
 }
@@ -212,7 +212,7 @@ img { max-width: 100%; height: auto; display: block; }
 .section__divider {
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    background: #9346b6;
     border-radius: 2px;
     margin-bottom: 2rem;
 }
@@ -714,7 +714,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* ===== ABOUT ===== */
 .about {
     padding: 8rem 0;
-    background: var(--color-white);
+    background: #000000;
     position: relative;
 }
 
@@ -727,7 +727,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .about__text {
     font-size: var(--font-size-base);
-    color: var(--color-gray);
+    color: #ffffff;
     line-height: 1.9;
     margin-bottom: 1.25rem;
 }
@@ -799,7 +799,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .service__card {
-    background: var(--color-white);
+    background: #000000;
     padding: 2.5rem 1.75rem;
     border-radius: 20px;
     text-align: center;
@@ -893,7 +893,7 @@ img { max-width: 100%; height: auto; display: block; }
 .service__title {
     font-size: var(--font-size-lg);
     font-weight: 700;
-    color: var(--color-secondary);
+    color: #74ed00;
     margin-bottom: 0.5rem;
     position: relative;
     z-index: 1;
@@ -901,7 +901,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .service__desc {
     font-size: var(--font-size-sm);
-    color: var(--color-gray);
+    color: #9346b6;
     line-height: 1.6;
     margin-bottom: 1rem;
     position: relative;
@@ -911,7 +911,7 @@ img { max-width: 100%; height: auto; display: block; }
 .service__line {
     width: 40px;
     height: 3px;
-    background: linear-gradient(90deg, var(--color-accent), var(--color-primary-light));
+    background: linear-gradient(90deg, #74ed00, #9346b6);
     margin: 0 auto;
     border-radius: 2px;
     transition: width 0.4s ease;
@@ -970,7 +970,7 @@ img { max-width: 100%; height: auto; display: block; }
     content: '';
     position: absolute;
     inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background: #000000;
 }
 
 .stats__grid {
@@ -1008,7 +1008,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .stat__circle-fill {
     fill: none;
-    stroke: var(--color-accent);
+    stroke: #9346b6;
     stroke-width: 3;
     stroke-linecap: round;
     transition: stroke-dashoffset 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -1018,7 +1018,7 @@ img { max-width: 100%; height: auto; display: block; }
     display: block;
     font-size: var(--font-size-4xl);
     font-weight: 900;
-    color: var(--color-white);
+    color: #74ed00;
     line-height: 1;
     margin-bottom: 0.75rem;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -1027,7 +1027,7 @@ img { max-width: 100%; height: auto; display: block; }
 .stat__title {
     font-size: var(--font-size-sm);
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.85);
+    color:#9346b6;
     line-height: 1.5;
 }
 
@@ -1297,7 +1297,7 @@ img { max-width: 100%; height: auto; display: block; }
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: var(--color-accent);
+    background: #74ed00;
     color: var(--color-dark);
     display: flex;
     align-items: center;
