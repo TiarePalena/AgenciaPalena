@@ -19,9 +19,7 @@
     <div class="preloader" id="preloader">
         <div class="preloader__inner">
             <div class="preloader__logo">
-                <span>P<span style="display:inline-block;transform:scaleY(-1) translateY(3px)">A</span>LEN<span
-                        style="display:inline-block;transform:scaleY(-1) translateY(3px)">A</span></span><span
-                    style="color:#8bc34a">.</span>
+                <img src="imagenes/LOGO VERDE.png" alt="Logo Palena" style="height:80px;width:auto;display:block;margin:0 auto;" />
             </div>
             <div class="preloader__bar">
                 <div class="preloader__progress"></div>
@@ -45,8 +43,11 @@
                 <span class="hamburger__line"></span>
             </div>
             <a href="#" class="nav__logo">
-                <div class="logo-mark">
+                <div class="logo-mark logo-mark--full">
                     <img src="imagenes/LOGO VERDE.png" alt="Logo Palena" style="height:48px;width:auto;display:block;" />
+                </div>
+                <div class="logo-mark logo-mark--iso">
+                    <img src="imagenes/ISO VERDE.png" alt="Logo Palena" style="height:40px;width:auto;display:block;" />
                 </div>
                 <span class="logo-tagline">TODO ES MEJOR <strong>CON PALENA</strong></span>
             </a>
@@ -104,11 +105,26 @@
                     <video class="hero__video" autoplay muted loop playsinline>
                         <source src="imagenes/Quienes Somos.mp4" type="video/mp4">
                     </video>
+                    <div class="hero__overlay-text" id="quienesSomosText">
+                        <h2 class="hero__overlay-title">Impulsamos marcas que quieren crecer de verdad.</h2>
+                        <p class="hero__overlay-desc hero__overlay-desc--desktop">Somos una agencia chilena especializada en consumo masivo y entendemos cómo conectar productos con personas en mercados altamente competitivos. Nos movemos en industrias como automotriz, gastronomía, retail y educación, creando estrategias que no solo se ven bien, sino que venden.</p>
+                        <p class="hero__overlay-desc hero__overlay-desc--mobile">Agencia chilena especializada en consumo masivo. Conectamos productos con personas en mercados competitivos.</p>
+                    </div>
                 </div>
                 <div class="hero__slide">
-                    <video class="hero__video" autoplay muted loop playsinline>
+                    <video class="hero__video hero__video--desktop" autoplay muted loop playsinline>
                         <source src="imagenes/Que hacemos.mp4" type="video/mp4">
                     </video>
+                    <video class="hero__video hero__video--mobile" autoplay muted loop playsinline>
+                        <source src="imagenes/Que hacemos-movil.mp4.mp4" type="video/mp4">
+                    </video>
+                    <div class="hero__overlay-text" id="queHacemosText">
+                        <h2 class="hero__overlay-title">Transformamos marcas en referentes de su industria.</h2>
+                        <p class="hero__overlay-desc hero__overlay-desc--desktop">En Agencia Palena diseñamos estrategias que conectan con el consumidor actual y convierten atención en ventas. Analizamos el mercado, detectamos oportunidades y ejecutamos campañas que impactan en el negocio.</p>
+                        <p class="hero__overlay-cta hero__overlay-cta--desktop">Si tu marca quiere crecer en consumo masivo, necesita una estrategia inteligente. Y ahí entramos nosotros.</p>
+                        <p class="hero__overlay-desc hero__overlay-desc--mobile">Estrategias que conectan con el consumidor y convierten atención en ventas.</p>
+                        <p class="hero__overlay-cta hero__overlay-cta--mobile">Tu marca merece una estrategia inteligente.</p>
+                    </div>
                 </div>
                 <!-- Slider dots -->
                 <div class="hero__dots">
@@ -132,7 +148,7 @@
             <div class="container">
                 <div class="about__grid">
                     <div class="about__content" data-aos="fade-right" data-aos-duration="1000">
-                        <span class="section__label">QUIÉNES SOMOS</span>
+                        <span class="section__label">QUIENES SOMOS</span>
                         <h2 class="section__title">Comunicaciones<br>Creativas</h2>
                         <div class="section__divider"></div>
                         <p class="about__text">
@@ -166,7 +182,7 @@
                     <div class="section__divider section__divider--center"></div>
                 </div>
                 <div class="services__grid">
-                    <div class="service__card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+                    <div class="service__card service__card--no-bg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
                         <div class="service__icon-wrapper">
                             <div class="service__icon">
                                 <i class="fas fa-bullhorn"></i>
@@ -177,7 +193,7 @@
                         <p class="service__desc">Estrategias digitales integrales para tu marca</p>
                         <div class="service__line"></div>
                     </div>
-                    <div class="service__card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+                    <div class="service__card service__card--no-bg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
                         <div class="service__icon-wrapper">
                             <div class="service__icon">
                                 <i class="fas fa-chart-line"></i>
@@ -188,18 +204,34 @@
                         <p class="service__desc">Medición y análisis de datos para decisiones inteligentes</p>
                         <div class="service__line"></div>
                     </div>
-                    <div class="service__card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                    <div class="service__card service__card--no-bg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                         <div class="service__icon-wrapper">
                             <div class="service__icon">
-                                <i class="fas fa-users"></i>
+                                <svg 
+                                  width="1.5em" 
+                                  height="1.5em" 
+                                  xmlns="http://www.w3.org/2000/svg" 
+                                  viewBox="0 0 24 24" 
+                                  fill="none" 
+                                  stroke="currentColor" 
+                                  stroke-width="1.5" 
+                                  stroke-linecap="round" 
+                                  stroke-linejoin="round"
+                                  class="icon-urban"
+                                >
+                                  <path d="m12.296 3.464 3.02 3.956"/>
+                                  <path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3z"/>
+                                  <path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                  <path d="m6.18 5.276 3.1 3.899"/>
+                                </svg>
                             </div>
                             <div class="service__icon-bg"></div>
                         </div>
-                        <h3 class="service__title">Influencers</h3>
-                        <p class="service__desc">Conexión con influenciadores clave del mercado</p>
+                        <h3 class="service__title">Grabaciones y edición de Contenido</h3>
+                        <p class="service__desc">Creación y edición de contenido audiovisual para tu marca</p>
                         <div class="service__line"></div>
                     </div>
-                    <div class="service__card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
+                    <div class="service__card service__card--no-bg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
                         <div class="service__icon-wrapper">
                             <div class="service__icon">
                                 <i class="fas fa-building"></i>
@@ -380,7 +412,7 @@
 
     <!-- FLOATING CONTACT BUTTON -->
     <a href="#contact" class="floating-contact" aria-label="Contact us">
-        <span>contact us</span>
+        <span>contactanos</span>
     </a>
 
     <!-- AOS Library -->
@@ -445,28 +477,67 @@
             const totalSlides = slides.length;
             let autoTimer;
 
+            const overlayText = document.getElementById('queHacemosText');
+            const overlayTextQS = document.getElementById('quienesSomosText');
+            let overlayTimer = null;
+
             function goToSlide(index) {
                 slides[currentSlide].classList.remove('hero__slide--active');
                 dots[currentSlide].classList.remove('hero__dot--active');
                 currentSlide = index;
                 slides[currentSlide].classList.add('hero__slide--active');
                 dots[currentSlide].classList.add('hero__dot--active');
+
+                // Reset overlay text animations
+                if (overlayTimer) clearTimeout(overlayTimer);
+                overlayText.classList.remove('hero__overlay-text--visible');
+                overlayTextQS.classList.remove('hero__overlay-text--visible');
+
+                // Get all videos on current slide (desktop and mobile)
+                const videos = slides[currentSlide].querySelectorAll('video');
+                videos.forEach(video => {
+                    video.currentTime = 0;
+                    video.play();
+                });
+
+                // Slide 1: "Quienes Somos" - show text after 1s, pause videos
+                if (currentSlide === 1) {
+                    overlayTimer = setTimeout(() => {
+                        overlayTextQS.classList.add('hero__overlay-text--visible');
+                        videos.forEach(video => video.pause());
+                    }, 1000);
+                }
+
+                // Slide 2: "Que hacemos" - show text after 2s, pause videos
+                if (currentSlide === 2) {
+                    overlayTimer = setTimeout(() => {
+                        overlayText.classList.add('hero__overlay-text--visible');
+                        videos.forEach(video => video.pause());
+                    }, 2000);
+                }
+            }
+
+            function scheduleNext() {
+                clearTimeout(autoTimer);
+                // Slides with text (1 and 2) get 15s to allow reading; others get 5s
+                const delay = (currentSlide === 1 || currentSlide === 2) ? 15000 : 5000;
+                autoTimer = setTimeout(nextSlide, delay);
             }
 
             function nextSlide() {
                 goToSlide((currentSlide + 1) % totalSlides);
+                scheduleNext();
             }
 
             dots.forEach(dot => {
                 dot.addEventListener('click', () => {
                     const index = parseInt(dot.dataset.slide);
                     goToSlide(index);
-                    clearInterval(autoTimer);
-                    autoTimer = setInterval(nextSlide, 5000);
+                    scheduleNext();
                 });
             });
 
-            autoTimer = setInterval(nextSlide, 5000);
+            scheduleNext();
         })();
 
         // ===== MOBILE NAV TOGGLE =====
