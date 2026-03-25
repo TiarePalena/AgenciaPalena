@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias! - Agencia Palena</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico?v=2">
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.ico?v=2">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1258579612913154');
+    fbq('track', 'PageView');
+    fbq('track', 'Lead');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1258579612913154&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P5VLCSKC');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJL333227R"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KJL333227R');
+    gtag('event', 'conversion', { 'send_to': 'G-KJL333227R' });
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'Graffiti City';
+            src: url('fuentes/Graffiti City.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0d0d1a;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            position: relative;
+            padding: 0.5rem;
+        }
+
+        /* Fondo animado */
+        .bg-glow {
+            position: fixed;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.08;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bg-glow--green {
+            background: #74ed00;
+            top: -200px;
+            right: -150px;
+            animation: floatGlow 8s ease-in-out infinite;
+        }
+
+        .bg-glow--purple {
+            background: #9346b6;
+            bottom: -200px;
+            left: -150px;
+            animation: floatGlow 8s ease-in-out infinite reverse;
+        }
+
+        @keyframes floatGlow {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(30px, 30px); }
+        }
+
+        .thankyou {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 900px;
+            padding: 1rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .thankyou__logo {
+            margin-bottom: 0.5rem;
+        }
+
+        .thankyou__logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .thankyou__icon {
+            width: 100px;
+            height: 100px;
+            background: #74ed00;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: #000;
+            box-shadow: 0 0 40px rgba(116, 237, 0, 0.4);
+            animation: iconPulse 3s ease-in-out infinite;
+            margin: 0.3rem 0;
+        }
+
+        @keyframes iconPulse {
+            0%, 100% { box-shadow: 0 0 30px rgba(116, 237, 0, 0.4); }
+            50% { box-shadow: 0 0 60px rgba(116, 237, 0, 0.6); }
+        }
+
+        .thankyou__title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #74ed00;
+            margin: 0.2rem 0;
+            letter-spacing: 1px;
+        }
+
+        .thankyou__subtitle {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.4;
+            margin: 0.3rem 0;
+        }
+
+        .thankyou__subtitle--highlight {
+            color: #9346b6;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Lead card */
+        .lead-card {
+            display: none;
+        }
+
+        .lead-card__label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #9346b6;
+            margin-bottom: 0.75rem;
+        }
+
+        .lead-card__number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            color: #74ed00;
+            letter-spacing: 3px;
+            text-shadow: 0 0 20px rgba(116, 237, 0, 0.25);
+            margin-bottom: 0.75rem;
+        }
+
+        .lead-card__date {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .lead-card__note {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Social Links */
+        .thankyou__social {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 0.8rem 0 0.8rem 0;
+        }
+
+        .social__link-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 2px solid #74ed00;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #74ed00;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .social__link-btn:hover {
+            background: #74ed00;
+            color: #000;
+            box-shadow: 0 0 25px rgba(116, 237, 0, 0.5);
+        }
+
+        /* Botón volver */
+        .thankyou__btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.65rem 1.5rem;
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            background: #74ed00;
+            color: #000;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 0 25px rgba(116, 237, 0, 0.3);
+            margin-top: 0.3rem;
+        }
+
+        .thankyou__btn:hover {
+            box-shadow: 0 0 50px rgba(116, 237, 0, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .thankyou__btn i {
+            transition: transform 0.3s ease;
+        }
+
+        .thankyou__btn:hover i {
+            transform: translateX(-4px);
+        }
+
+        /* Confetti particles */
+        .confetti {
+            position: fixed;
+            top: -10px;
+            z-index: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            opacity: 0;
+            animation: confettiFall linear forwards;
+        }
+
+        @keyframes confettiFall {
+            0% { opacity: 1; transform: translateY(0) rotate(0deg); }
+            100% { opacity: 0; transform: translateY(100vh) rotate(720deg); }
+        }
+
+        @media (max-width: 480px) {
+            .thankyou__title { 
+                font-size: 2.5rem; 
+                margin: 0.3rem 0;
+            }
+            .thankyou__subtitle { 
+                font-size: 0.9rem; 
+                margin: 0.5rem 0;
+            }
+            .thankyou__subtitle--highlight {
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+            }
+            .thankyou__icon {
+                width: 100px;
+                height: 100px;
+                font-size: 2.5rem;
+                margin: 0.8rem 0;
+            }
+            .thankyou__social {
+                gap: 1.5rem;
+                margin: 1rem 0;
+            }
+            .social__link-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+            }
+            .thankyou__btn {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5VLCSKC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="bg-glow bg-glow--green"></div>
+    <div class="bg-glow bg-glow--purple"></div>
+
+    <div class="thankyou">
+        <div class="thankyou__logo">
+            <img src="imagenes/LOGO VERDE.png" alt="Agencia Palena">
+        </div>
+
+        <div class="thankyou__icon">
+            <i class="fas fa-check"></i>
+        </div>
+
+        <h1 class="thankyou__title">¡GRACIAS!</h1>
+        <p class="thankyou__subtitle thankyou__subtitle--highlight">
+            Tu mensaje ha sido enviado correctamente
+        </p>
+        <p class="thankyou__subtitle">
+            Hemos recibido tu información y nuestro equipo se pondrá en contacto contigo a la brevedad. Mientras tanto, síguenos en nuestras redes sociales para conocer más sobre nuestros proyectos y novedades.
+        </p>
+
+        <div class="thankyou__social">
+            <a href="https://instagram.com/agenciapalena" target="_blank" rel="noopener noreferrer" class="social__link-btn" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/agencia-palena-cl/" target="_blank" rel="noopener noreferrer" class="social__link-btn" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <a href="index.html" class="thankyou__btn">
+            <i class="fas fa-arrow-left"></i>
+            <span>Volver al inicio</span>
+        </a>
+    </div>
+
+    <script>
+        // Confetti animation
+        function createConfetti() {
+            const colors = ['#74ed00', '#9346b6', '#ffffff'];
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.width = Math.random() * 8 + 5 + 'px';
+                confetti.style.height = Math.random() * 8 + 5 + 'px';
+                confetti.style.animationDuration = Math.random() * 2 + 2 + 's';
+                confetti.style.animationDelay = Math.random() * 2 + 's';
+                document.body.appendChild(confetti);
+            }
+        }
+        createConfetti();
+    </script>
+</body>
+
+</html>
