@@ -77,7 +77,7 @@
     <div class="preloader" id="preloader">
         <div class="preloader__inner">
             <div class="preloader__logo">
-                <img src="imagenes/LOGO VERDE.png" alt="Logo Palena" style="height:80px;width:auto;display:block;margin:0 auto;" />
+                <img src="imagenes/LOGO VERDE.png" alt="Logo Palena" class="logo-img logo-img--preloader" />
             </div>
             <div class="preloader__bar">
                 <div class="preloader__progress"></div>
@@ -95,20 +95,27 @@
     <!-- NAVIGATION -->
     <header class="header" id="header">
         <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <div class="logo-mark logo-mark--full">
+                    <img src="imagenes/LOGO VERDE.png" alt="Logo Palena" class="logo-img" />
+                </div>
+                <div class="logo-mark logo-mark--iso">
+                    <img src="imagenes/ISO VERDE.png" alt="Logo Palena" class="logo-img logo-img--iso" />
+                </div>
+                <span class="logo-tagline">Transformamos marcas <strong>en referentes</strong></span>
+            </a>
+            <ul class="nav__menu nav__menu--desktop">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">Quiénes Somos</a></li>
+                <li><a href="#services" class="nav__link">Servicios</a></li>
+                <li><a href="#experience" class="nav__link">Experiencia</a></li>
+                <li><a href="#contact" class="nav__link">Contacto</a></li>
+            </ul>
             <div class="nav__toggle" id="nav-toggle">
                 <span class="hamburger__line"></span>
                 <span class="hamburger__line"></span>
                 <span class="hamburger__line"></span>
             </div>
-            <a href="#" class="nav__logo">
-                <div class="logo-mark logo-mark--full">
-                    <img src="imagenes/LOGO VERDE.png" alt="Logo Palena" style="height:48px;width:auto;display:block;" />
-                </div>
-                <div class="logo-mark logo-mark--iso">
-                    <img src="imagenes/ISO VERDE.png" alt="Logo Palena" style="height:40px;width:auto;display:block;" />
-                </div>
-                <span class="logo-tagline">Transformamos marcas <strong>en referentes</strong></span>
-            </a>
         </nav>
     </header>
 
@@ -117,7 +124,7 @@
         <div class="menu-overlay__header container">
             <a href="#" class="nav__logo nav__logo--menu">
                 <div class="logo-mark">
-                    <img src="imagenes/LOGO VERDE.png" alt="Logo Palena" style="height:48px;width:auto;display:block;" />
+                    <img src="imagenes/LOGO VERDE.png" alt="Logo Palena" class="logo-img" />
                 </div>
                 <span class="logo-tagline logo-tagline--white">Transformamos marcas <strong>en referentes</strong></span>
             </a>
@@ -159,37 +166,6 @@
                         <source src="imagenes/Agencia Palena.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="hero__slide">
-                    <video class="hero__video" autoplay muted loop playsinline>
-                        <source src="imagenes/Quienes Somos.mp4" type="video/mp4">
-                    </video>
-                    <div class="hero__overlay-text" id="quienesSomosText">
-                        <h2 class="hero__overlay-title">Impulsamos marcas que quieren crecer de verdad.</h2>
-                        <p class="hero__overlay-desc hero__overlay-desc--desktop">Somos una agencia chilena especializada en consumo masivo y entendemos cómo conectar productos con personas en mercados altamente competitivos. Nos movemos en industrias como automotriz, gastronomía, retail y educación, creando estrategias que no solo se ven bien, sino que venden.</p>
-                        <p class="hero__overlay-desc hero__overlay-desc--mobile">Agencia chilena especializada en consumo masivo. Conectamos productos con personas en mercados competitivos.</p>
-                    </div>
-                </div>
-                <div class="hero__slide">
-                    <video class="hero__video hero__video--desktop" autoplay muted loop playsinline>
-                        <source src="imagenes/Que hacemos.mp4" type="video/mp4">
-                    </video>
-                    <video class="hero__video hero__video--mobile" autoplay muted loop playsinline>
-                        <source src="imagenes/Que hacemos-movil.mp4.mp4" type="video/mp4">
-                    </video>
-                    <div class="hero__overlay-text" id="queHacemosText">
-                        <h2 class="hero__overlay-title">Transformamos marcas en referentes de su industria.</h2>
-                        <p class="hero__overlay-desc hero__overlay-desc--desktop">En Agencia Palena diseñamos estrategias que conectan con el consumidor actual y convierten atención en ventas. Analizamos el mercado, detectamos oportunidades y ejecutamos campañas que impactan en el negocio.</p>
-                        <p class="hero__overlay-cta hero__overlay-cta--desktop">Si tu marca quiere crecer en consumo masivo, necesita una estrategia inteligente. Y ahí entramos nosotros.</p>
-                        <p class="hero__overlay-desc hero__overlay-desc--mobile">Estrategias que conectan con el consumidor y convierten atención en ventas.</p>
-                        <p class="hero__overlay-cta hero__overlay-cta--mobile">Tu marca merece una estrategia inteligente.</p>
-                    </div>
-                </div>
-                <!-- Slider dots -->
-                <div class="hero__dots">
-                    <button class="hero__dot hero__dot--active" data-slide="0" aria-label="Slide 1"></button>
-                    <button class="hero__dot" data-slide="1" aria-label="Slide 2"></button>
-                    <button class="hero__dot" data-slide="2" aria-label="Slide 3"></button>
-                </div>
             </div>
 
             <!-- Scroll indicator -->
@@ -201,30 +177,41 @@
             </div>
         </section>
 
-        <!-- ABOUT / SERVICES INTRO -->
-        <section class="about" id="about">
+        <!-- ALIANZAS SECTION -->
+        <section class="alianzas" id="alianzas">
             <div class="container">
-                <div class="about__grid">
-                    <div class="about__content" data-aos="fade-right" data-aos-duration="1000">
-                        <span class="section__label">QUIENES SOMOS</span>
-                        <h2 class="section__title">Comunicaciones<br>Creativas</h2>
-                        <div class="section__divider"></div>
-                        <p class="about__text">
-                            Buscamos generar estrategias comunicacionales que impacten en los negocios de nuestros
-                            clientes.
-                            Nuestro equipo de profesionales son expertos en cada tipo de servicio.
-                        </p>
-                        <p class="about__text">
-                            Entregamos servicios personalizados, sumamente creativos con foco en obtención de
-                            resultados.
-                        </p>
-                    </div>
-                    <div class="about__image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                        <div class="about__img-wrapper">
-                            <img src="imagenes/DSC06495.jpg"
-                                alt="Equipo Agencia Palena" loading="lazy">
-                            <div class="about__img-float about__img-float--1"></div>
-                            <div class="about__img-float about__img-float--2"></div>
+                <div data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="section__title section__title--center">Alianzas</h2>
+                    <p class="section__subtitle">Plataformas en las que estamos certificados</p>
+                </div>
+
+                <!-- Infinite alliance marquee -->
+                <div class="alliances__marquee" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="alliances__track">
+                        <div class="alliance__logo">
+                            <img src="imagenes/googlepartner.png" alt="Google" loading="lazy">
+                        </div>
+                        <div class="alliance__logo">
+                            <img src="imagenes/hubspot.png" alt="Hubspot" loading="lazy">
+                        </div>
+                        <div class="alliance__logo">
+                            <img src="imagenes/meta.png" alt="Meta" loading="lazy">
+                        </div>
+                        <div class="alliance__logo">
+                            <img src="imagenes/pipedrive.png" alt="Pipedrive" loading="lazy">
+                        </div>
+                        <!-- Duplicados para loop infinito -->
+                        <div class="alliance__logo">
+                            <img src="imagenes/googlepartner.png" alt="Google" loading="lazy">
+                        </div>
+                        <div class="alliance__logo">
+                            <img src="imagenes/hubspot.png" alt="Hubspot" loading="lazy">
+                        </div>
+                        <div class="alliance__logo">
+                            <img src="imagenes/meta.png" alt="Meta" loading="lazy">
+                        </div>
+                        <div class="alliance__logo">
+                            <img src="imagenes/pipedrive.png" alt="Pipedrive" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -235,74 +222,83 @@
         <section class="services" id="services">
             <div class="container">
                 <div class="services__header" data-aos="fade-up" data-aos-duration="800">
-                    <span class="section__label section__label--center">NUESTROS SERVICIOS</span>
+                    <span class="section__label section__label--center">Confiamos en Nosotros</span>
                     <h2 class="section__title section__title--center">Lo que hacemos</h2>
                     <div class="section__divider section__divider--center"></div>
                 </div>
                 <div class="services__grid">
-                    <div class="service__card service__card--no-bg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
-                        <div class="service__icon-wrapper">
-                            <div class="service__icon">
-                                <i class="fas fa-bullhorn"></i>
-                            </div>
-                            <div class="service__icon-bg"></div>
-                        </div>
-                        <h3 class="service__title">Digital</h3>
-                        <p class="service__desc">Estrategias digitales integrales para tu marca</p>
-                        <div class="service__line"></div>
+                    <div class="service__card">
+                        <h3 class="service__title">Performance</h3>
+
+                        <p class="service__desc">Campañas y Publicidad</p>
+                        <p class="service__detail">Estructuración de Campañas<br>Publicidad online Inversión<br>Growth Marketing</p>
                     </div>
-                    <div class="service__card service__card--no-bg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
-                        <div class="service__icon-wrapper">
-                            <div class="service__icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="service__icon-bg"></div>
-                        </div>
-                        <h3 class="service__title">Analytics</h3>
-                        <p class="service__desc">Medición y análisis de datos para decisiones inteligentes</p>
-                        <div class="service__line"></div>
+                    <div class="service__separator">
+                        <img src="imagenes/rayo verde.png" alt="separator">
                     </div>
-                    <div class="service__card service__card--no-bg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-                        <div class="service__icon-wrapper">
-                            <div class="service__icon">
-                                <svg 
-                                  width="1.5em" 
-                                  height="1.5em" 
-                                  xmlns="http://www.w3.org/2000/svg" 
-                                  viewBox="0 0 24 24" 
-                                  fill="none" 
-                                  stroke="currentColor" 
-                                  stroke-width="1.5" 
-                                  stroke-linecap="round" 
-                                  stroke-linejoin="round"
-                                  class="icon-urban"
-                                >
-                                  <path d="m12.296 3.464 3.02 3.956"/>
-                                  <path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3z"/>
-                                  <path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                                  <path d="m6.18 5.276 3.1 3.899"/>
-                                </svg>
-                            </div>
-                            <div class="service__icon-bg"></div>
-                        </div>
-                        <h3 class="service__title">Grabaciones y edición de Contenido</h3>
-                        <p class="service__desc">Creación y edición de contenido audiovisual para tu marca</p>
-                        <div class="service__line"></div>
+                    <div class="service__card">
+                        <h3 class="service__title">Contenido</h3>
+
+                        <p class="service__desc">Producción & Edición</p>
+                        <p class="service__detail">Creación de contenido<br>Grabación & Edición<br>Growth Marketing</p>
                     </div>
-                    <div class="service__card service__card--no-bg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="450">
-                        <div class="service__icon-wrapper">
-                            <div class="service__icon">
-                                <i class="fas fa-building"></i>
-                            </div>
-                            <div class="service__icon-bg"></div>
-                        </div>
-                        <h3 class="service__title">Brand & Corp PR</h3>
-                        <p class="service__desc">Relaciones públicas corporativas y de marca</p>
-                        <div class="service__line"></div>
+                    <div class="service__separator">
+                        <img src="imagenes/rayo verde.png" alt="separator">
+                    </div>
+                    <div class="service__card">
+                        <h3 class="service__title">Webs + IA</h3>
+                        <p class="service__desc">Desarrollo & Tecnología</p>
+                        <p class="service__detail">Sitios web a medida<br>Automatización online Inteligencia<br>Artificial</p>
                     </div>
                 </div>
             </div>
         </section>
+
+                <!-- GREEN DIVIDER -->
+        <div class="divider-ray">
+            <img src="imagenes/rayo verde.png" alt="Separator" class="divider-ray__image">
+        </div>
+
+
+        <!-- EXPERIENCE / CLIENTES -->
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="experience__layout" data-aos="fade-up" data-aos-duration="800">
+                    <!-- Fotos a la izquierda -->
+                    <div class="experience__photos">
+                        <div class="experience__photo-container">
+                            <img src="imagenes/02. diego.jpg" alt="Diego Cavagnaro" loading="lazy" class="experience__photo">
+                            <p class="experience__photo-name">Diego<br>Cavagnaro</p>
+                        </div>
+                        <div class="experience__photo-container">
+                            <img src="imagenes/01. andres.jpg" alt="Andrés Sadler" loading="lazy" class="experience__photo">
+                            <p class="experience__photo-name">Andrés<br>Sadler</p>
+                        </div>
+                    </div>
+
+                    <!-- Contenido a la derecha -->
+                    <div class="experience__content">
+                        <h2 class="section__title">Experiencia</h2>
+                        <p class="section__subtitle">Trayectoria en el mercado que nos avala</p>
+
+                        <div class="experience__box">
+                            <p>
+                                <span class="experience__highlight">Andrés Sadler</span>, fundador del portal inmobiliario PortalTerreno.com en Chile y México, y <span class="experience__highlight">Diego Cavagnaro</span>, gerente de ventas con más de una década de experiencia y fundador de su propia inmobiliaria, combinan su trayectoria en el mundo digital y comercial para impulsar el crecimiento de distintas marcas.
+                            </p>
+                            <p>
+                                Junto a un equipo especializado en cada área, trabajan de forma estratégica para fortalecer la presencia digital de sus clientes y generar resultados medibles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- GREEN DIVIDER -->
+        <div class="divider-ray">
+            <img src="imagenes/rayo verde.png" alt="Separator" class="divider-ray__image">
+        </div>
+
 
         <!-- STATS -->
         <section class="stats" id="stats">
@@ -314,109 +310,73 @@
             <div class="container">
                 <div class="stats__grid">
                     <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="0">
-                        <div class="stat__circle">
-                            <svg viewBox="0 0 100 100">
-                                <circle class="stat__circle-bg" cx="50" cy="50" r="45" />
-                                <circle class="stat__circle-fill" cx="50" cy="50" r="45" data-percent="87" />
-                            </svg>
-                        </div>
-                        <span class="stat__prefix">+</span><span class="stat__number" data-target="8">0</span>
-                        <h3 class="stat__title">Años en el mercado</h3>
+                        <span class="stat__prefix stat__prefix--hidden"></span>
+                        <span class="stat__number" data-target="756">0</span>
+                        <h3 class="stat__title">Proyectos completados</h3>
                     </div>
                     <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="150">
-                        <div class="stat__circle">
-                            <svg viewBox="0 0 100 100">
-                                <circle class="stat__circle-bg" cx="50" cy="50" r="45" />
-                                <circle class="stat__circle-fill" cx="50" cy="50" r="45" data-percent="72" />
-                            </svg>
-                        </div>
-                        <span class="stat__prefix">+</span><span class="stat__number" data-target="500">0</span>
-                        <h3 class="stat__title">Publicaciones realizadas para clientes</h3>
+                        <span class="stat__prefix stat__prefix--hidden"></span>
+                        <span class="stat__number" data-target="800">0</span>
+                        <h3 class="stat__title">Campañas activas</h3>
                     </div>
                     <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                        <div class="stat__circle">
-                            <svg viewBox="0 0 100 100">
-                                <circle class="stat__circle-bg" cx="50" cy="50" r="45" />
-                                <circle class="stat__circle-fill" cx="50" cy="50" r="45" data-percent="55" />
-                            </svg>
-                        </div>
-                        <span class="stat__prefix">+</span><span class="stat__number" data-target="800">0</span>
-                        <h3 class="stat__title">Campañas administradas</h3>
-                    </div>
-                    <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="450">
-                        <div class="stat__circle">
-                            <svg viewBox="0 0 100 100">
-                                <circle class="stat__circle-bg" cx="50" cy="50" r="45" />
-                                <circle class="stat__circle-fill" cx="50" cy="50" r="45" data-percent="93" />
-                            </svg>
-                        </div>
-                        <span class="stat__prefix">+</span><span class="stat__number" data-target="1500">0</span>
-                        <h3 class="stat__title">MM invertidos en publicidad</h3>
+                        <span class="stat__prefix stat__prefix--hidden"></span>
+                        <span class="stat__number" data-target="8">0</span>
+                        <h3 class="stat__title">Años en el mercado</h3>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- EXPERIENCE / CLIENTS -->
-        <section class="experience" id="experience">
+        <!-- CLIENTES -->
+        <section class="clients-section" id="clients">
             <div class="container">
                 <div data-aos="fade-up" data-aos-duration="800">
-                    <span class="section__label section__label--center">NUESTROS CLIENTES</span>
-                    <h2 class="section__title section__title--center">Experiencia</h2>
-                    <div class="section__divider section__divider--center"></div>
+                    <h2 class="section__title section__title--center">Clientes</h2>
+                    <p class="section__subtitle">Empresas que confían en nosotros</p>
                 </div>
 
                 <!-- Infinite client marquee -->
                 <div class="clients__marquee" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div class="clients__track">
                         <div class="client__logo">
-                            <img src="imagenes/logo kaiser color.png"
-                                alt="Kaiser" loading="lazy">
+                            <img src="imagenes/logo kaiser color.png" alt="Kaiser" loading="lazy">
                         </div>
                         <div class="client__logo">
-                            <img src="imagenes/logo portal terreno marketplace.png"
-                                alt="Portal Terreno Marketplace" loading="lazy">
+                            <img src="imagenes/logo portal terreno marketplace.png" alt="Portal Terreno" loading="lazy">
                         </div>
                         <div class="client__logo">
-                            <img src="imagenes/logo-terra-segura (1).png"
-                                alt="Terra Segura" loading="lazy">
+                            <img src="imagenes/logo-terra-segura (1).png" alt="Terra Segura" loading="lazy">
                         </div>
                         <div class="client__logo">
-                            <img src="imagenes/LOGO OG.png"
-                                alt="OG" loading="lazy">
+                            <img src="imagenes/LOGO OG.png" alt="OG" loading="lazy">
                         </div>
                         <!-- Duplicados para loop infinito -->
                         <div class="client__logo">
-                            <img src="imagenes/logo kaiser color.png"
-                                alt="Kaiser" loading="lazy">
+                            <img src="imagenes/logo kaiser color.png" alt="Kaiser" loading="lazy">
                         </div>
                         <div class="client__logo">
-                            <img src="imagenes/logo portal terreno marketplace.png"
-                                alt="Portal Terreno Marketplace" loading="lazy">
+                            <img src="imagenes/logo portal terreno marketplace.png" alt="Portal Terreno" loading="lazy">
                         </div>
                         <div class="client__logo">
-                            <img src="imagenes/logo-terra-segura (1).png"
-                                alt="Terra Segura" loading="lazy">
+                            <img src="imagenes/logo-terra-segura (1).png" alt="Terra Segura" loading="lazy">
                         </div>
                         <div class="client__logo">
-                            <img src="imagenes/LOGO OG.png"
-                                alt="OG" loading="lazy">
+                            <img src="imagenes/LOGO OG.png" alt="OG" loading="lazy">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- WORKS / PORTFOLIO -->
-        <section class="experience" id="works">
+        <!-- WORKS / PORTFOLIO (CARRUSEL MANTENIDO INTACTO) -->
+        <section class="works" id="works">
             <div class="container">
                 <div data-aos="fade-up" data-aos-duration="800">
-                    <span class="section__label section__label--center">PORTFOLIO</span>
-                    <h2 class="section__title section__title--center">Nuestros Trabajos</h2>
-                    <div class="section__divider section__divider--center"></div>
+                    <h2 class="section__title section__title--center">Conoce al #Equipo</h2>
                 </div>
 
-                <!-- Works carousel -->
+                <!-- Works carousel - MANTENER INTACTO -->
                 <div class="works__marquee" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div class="works__track">
                         <div class="work__item">
@@ -474,6 +434,41 @@
                         <div class="work__item">
                             <img src="imagenes/9.png" alt="Trabajo 9" loading="lazy">
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS -->
+        <section class="testimonios" id="testimonios">
+            <div class="container">
+                <div data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="section__title section__title--center">Testimonios</h2>
+                    <p class="section__subtitle">¿Qué dicen nuestros clientes?</p>
+                </div>
+
+                <!-- Testimonials Grid -->
+                <div class="testimonials__grid" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="testimonial__card">
+                        <img src="imagenes/meta.png" alt="Cliente 1" loading="lazy" class="testimonial__img">
+                        <div class="testimonial__stars">★★★★★</div>
+                        <p class="testimonial__text">Excelente trabajo, han transformado nuestro negocio completamente. Muy profesionales y dedicados.</p>
+                        <h4 class="testimonial__name">Juan Pérez</h4>
+                        <p class="testimonial__role">CEO - Empresa X</p>
+                    </div>
+                    <div class="testimonial__card">
+                        <img src="imagenes/google.png" alt="Cliente 2" loading="lazy" class="testimonial__img">
+                        <div class="testimonial__stars">★★★★★</div>
+                        <p class="testimonial__text">Los resultados han superado nuestras expectativas. Un equipo increíble con gran atención al detalle.</p>
+                        <h4 class="testimonial__name">María García</h4>
+                        <p class="testimonial__role">Directora - Empresa Y</p>
+                    </div>
+                    <div class="testimonial__card">
+                        <img src="imagenes/pipedrive.png" alt="Cliente 3" loading="lazy" class="testimonial__img">
+                        <div class="testimonial__stars">★★★★★</div>
+                        <p class="testimonial__text">La mejor decisión que tomamos fue trabajar con ellos. Muy recomendados para cualquier proyecto.</p>
+                        <h4 class="testimonial__name">Carlos López</h4>
+                        <p class="testimonial__role">Founder - Empresa Z</p>
                     </div>
                 </div>
             </div>
@@ -574,7 +569,7 @@
                 <div class="footer__brand" data-aos="fade-right" data-aos-duration="600">
                     <div class="footer__logo">
                         <div class="logo-mark">
-                            <img src="imagenes/LOGO VERDE.png" alt="Logo Palena" style="height:48px;width:auto;display:block;" />
+                            <img src="imagenes/LOGO VERDE.png" alt="Logo Palena" class="logo-img logo-img--footer" />
                         </div>
                     </div>
                     <p class="footer__tagline">Agencia Palena. Transformamos marcas en referentes.</p>
@@ -660,76 +655,8 @@
             });
         }
 
-        // ===== VIDEO SLIDER =====
-        (function initSlider() {
-            const slides = document.querySelectorAll('.hero__slide');
-            const dots = document.querySelectorAll('.hero__dot');
-            let currentSlide = 0;
-            const totalSlides = slides.length;
-            let autoTimer;
-
-            const overlayText = document.getElementById('queHacemosText');
-            const overlayTextQS = document.getElementById('quienesSomosText');
-            let overlayTimer = null;
-
-            function goToSlide(index) {
-                slides[currentSlide].classList.remove('hero__slide--active');
-                dots[currentSlide].classList.remove('hero__dot--active');
-                currentSlide = index;
-                slides[currentSlide].classList.add('hero__slide--active');
-                dots[currentSlide].classList.add('hero__dot--active');
-
-                // Reset overlay text animations
-                if (overlayTimer) clearTimeout(overlayTimer);
-                overlayText.classList.remove('hero__overlay-text--visible');
-                overlayTextQS.classList.remove('hero__overlay-text--visible');
-
-                // Get all videos on current slide (desktop and mobile)
-                const videos = slides[currentSlide].querySelectorAll('video');
-                videos.forEach(video => {
-                    video.currentTime = 0;
-                    video.play();
-                });
-
-                // Slide 1: "Quienes Somos" - show text after 1s, pause videos
-                if (currentSlide === 1) {
-                    overlayTimer = setTimeout(() => {
-                        overlayTextQS.classList.add('hero__overlay-text--visible');
-                        videos.forEach(video => video.pause());
-                    }, 1000);
-                }
-
-                // Slide 2: "Que hacemos" - show text after 2s, pause videos
-                if (currentSlide === 2) {
-                    overlayTimer = setTimeout(() => {
-                        overlayText.classList.add('hero__overlay-text--visible');
-                        videos.forEach(video => video.pause());
-                    }, 2000);
-                }
-            }
-
-            function scheduleNext() {
-                clearTimeout(autoTimer);
-                // Slides with text (1 and 2) get 15s to allow reading; others get 5s
-                const delay = (currentSlide === 1 || currentSlide === 2) ? 15000 : 5000;
-                autoTimer = setTimeout(nextSlide, delay);
-            }
-
-            function nextSlide() {
-                goToSlide((currentSlide + 1) % totalSlides);
-                scheduleNext();
-            }
-
-            dots.forEach(dot => {
-                dot.addEventListener('click', () => {
-                    const index = parseInt(dot.dataset.slide);
-                    goToSlide(index);
-                    scheduleNext();
-                });
-            });
-
-            scheduleNext();
-        })();
+        // ===== VIDEO SLIDER REMOVED =====
+        // Hero now only shows the first video
 
         // ===== MOBILE NAV TOGGLE =====
         const navToggle = document.getElementById('nav-toggle');
