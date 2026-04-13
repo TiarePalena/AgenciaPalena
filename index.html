@@ -111,6 +111,12 @@
                 <li><a href="#experience" class="nav__link">Experiencia</a></li>
                 <li><a href="#contact" class="nav__link">Contacto</a></li>
             </ul>
+            <div class="nav__cta">
+                <a href="#contact" class="btn btn--nav">Agendar reunión personalizada</a>
+                <a href="https://wa.me/56940329987" target="_blank" class="btn btn--whatsapp-nav" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
             <div class="nav__toggle" id="nav-toggle">
                 <span class="hamburger__line"></span>
                 <span class="hamburger__line"></span>
@@ -180,11 +186,6 @@
         <!-- ALIANZAS SECTION -->
         <section class="alianzas" id="alianzas">
             <div class="container">
-                <div data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="section__title section__title--center">Alianzas</h2>
-                    <p class="section__subtitle">Plataformas en las que estamos certificados</p>
-                </div>
-
                 <!-- Infinite alliance marquee -->
                 <div class="alliances__marquee" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div class="alliances__track">
@@ -254,6 +255,111 @@
             </div>
         </section>
 
+        <!-- CONTACT FORM -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact__layout">
+                    <!-- FORMULARIO -->
+                    <div class="contact-form-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <form class="contact-form" id="contactForm" action="https://formsubmit.co/cristobal@agenciapalena.cl" method="POST">
+                            <!-- FormSubmit config -->
+                            <input type="hidden" name="_subject" value="Nuevo mensaje desde agenciapalena.cl">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="hidden" name="_next" value="thankyou.html">
+                            <input type="text" name="_honey" style="display:none">
+                            <div class="contact-form__row">
+                                <div class="contact-form__group">
+                                    <label class="contact-form__label" for="name">Nombre</label>
+                                    <input class="contact-form__input" type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                                    <span class="contact-form__line"></span>
+                                </div>
+                                <div class="contact-form__group">
+                                    <label class="contact-form__label" for="email">Email</label>
+                                    <input class="contact-form__input" type="email" id="email" name="email" placeholder="tu@email.com" required>
+                                    <span class="contact-form__line"></span>
+                                </div>
+                            </div>
+                            <div class="contact-form__row">
+                                <div class="contact-form__group">
+                                    <label class="contact-form__label" for="phone">Teléfono</label>
+                                    <div class="contact-form__phone-wrapper">
+                                        <span class="contact-form__phone-prefix">+56</span>
+                                        <input class="contact-form__input contact-form__phone-input" type="tel" id="phone" name="phone" placeholder="9 1234 5678" maxlength="9" pattern="9[0-9]{8}" required>
+                                    </div>
+                                    <input type="hidden" id="phoneHidden" name="Teléfono">
+                                    <span class="contact-form__line"></span>
+                                    <span class="contact-form__error" id="phoneError">Debe comenzar con 9 y tener 9 dígitos</span>
+                                </div>
+                                <div class="contact-form__group">
+                                    <label class="contact-form__label" for="subject">Asunto</label>
+                                    <select class="contact-form__input contact-form__select" id="subject" name="subject" required>
+                                        <option value="" disabled selected>Selecciona un servicio</option>
+                                        <option value="marketing">Marketing Digital</option>
+                                        <option value="rrss">Redes Sociales</option>
+                                        <option value="publicidad">Publicidad</option>
+                                        <option value="branding">Branding</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                    <span class="contact-form__line"></span>
+                                </div>
+                            </div>
+                            <div class="contact-form__group contact-form__group--full">
+                                <label class="contact-form__label" for="message">Mensaje</label>
+                                <textarea class="contact-form__input contact-form__textarea" id="message" name="message" placeholder="Cuéntanos sobre tu proyecto..." rows="4" required></textarea>
+                                <span class="contact-form__line"></span>
+                            </div>
+                            <div class="contact-form__submit">
+                                <button type="submit" class="btn btn--glow">
+                                    <span>Enviar mensaje</span>
+                                    <i class="fas fa-paper-plane btn__icon"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- INFO DE CONTACTO -->
+                    <div class="contact__info-compact">
+                        <div class="contact__info-item-compact">
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/56940329987" target="_blank">+56 9 4032 9987</a>
+                        </div>
+                        <div class="contact__info-item-compact">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contacto@agenciapalena.cl">contacto@agenciapalena.cl</a>
+                        </div>
+
+                        <!-- Redes sociales -->
+                        <div class="contact__info-divider"></div>
+                        <p class="contact__info-heading">Síguenos</p>
+                        <div class="contact__info-socials">
+                            <a href="https://instagram.com/agenciapalena" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/agencia-palena-cl/" target="_blank" rel="noopener noreferrer" class="contact__social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+
+                        <!-- Horario -->
+                        <div class="contact__info-divider"></div>
+                        <p class="contact__info-heading">Horario</p>
+                        <div class="contact__info-schedule">
+                            <p><span>Lun - Vie</span> 9:00 — 18:00</p>
+                            <p><span>Sáb - Dom</span> Cerrado</p>
+                        </div>
+
+                        <!-- Ubicación -->
+                        <div class="contact__info-divider"></div>
+                        <div class="contact__info-item-compact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Santiago, Chile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
                 <!-- GREEN DIVIDER -->
         <div class="divider-ray">
             <img src="imagenes/rayo verde.png" alt="Separator" class="divider-ray__image">
@@ -268,25 +374,27 @@
                     <div class="experience__photos">
                         <div class="experience__photo-container">
                             <img src="imagenes/02. diego.jpg" alt="Diego Cavagnaro" loading="lazy" class="experience__photo">
-                            <p class="experience__photo-name">Diego<br>Cavagnaro</p>
+                            <div class="experience__photo-info">
+                                <p class="experience__photo-name">Diego</p>
+                                <p class="experience__photo-name">Cavagnaro</p>
+                            </div>
                         </div>
                         <div class="experience__photo-container">
                             <img src="imagenes/01. andres.jpg" alt="Andrés Sadler" loading="lazy" class="experience__photo">
-                            <p class="experience__photo-name">Andrés<br>Sadler</p>
+                            <div class="experience__photo-info">
+                                <p class="experience__photo-name">Andrés</p>
+                                <p class="experience__photo-name">Sadler</p>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Contenido a la derecha -->
                     <div class="experience__content">
-                        <h2 class="section__title">Experiencia</h2>
-                        <p class="section__subtitle">Trayectoria en el mercado que nos avala</p>
-
                         <div class="experience__box">
+                            <h2 class="section__title">Experiencia</h2>
+                            <p class="section__subtitle">Trayectoria en el mercado que nos avala</p>
                             <p>
-                                <span class="experience__highlight">Andrés Sadler</span>, fundador del portal inmobiliario PortalTerreno.com en Chile y México, y <span class="experience__highlight">Diego Cavagnaro</span>, gerente de ventas con más de una década de experiencia y fundador de su propia inmobiliaria, combinan su trayectoria en el mundo digital y comercial para impulsar el crecimiento de distintas marcas.
-                            </p>
-                            <p>
-                                Junto a un equipo especializado en cada área, trabajan de forma estratégica para fortalecer la presencia digital de sus clientes y generar resultados medibles.
+                                <span class="experience__highlight">Andrés Sadler</span>, fundador del portal inmobiliario PortalTerreno.com en Chile y México, y <span class="experience__highlight">Diego Cavagnaro</span>, gerente de ventas con más de una década de experiencia, combinan su trayectoria digital y comercial junto a un equipo especializado para fortalecer la presencia de sus clientes y generar resultados medibles.
                             </p>
                         </div>
                     </div>
@@ -376,42 +484,46 @@
             </div>
         </section>
 
-        <!-- WORKS / PORTFOLIO (CARRUSEL MANTENIDO INTACTO) -->
+        <!-- WORKS / PORTFOLIO (SLIDER EQUIPO) -->
         <section class="works" id="works">
             <div class="container">
                 <div data-aos="fade-up" data-aos-duration="800">
                     <h2 class="section__title section__title--center">Conoce al #Equipo</h2>
                 </div>
 
-                <!-- Works carousel - MANTENER INTACTO -->
-                <div class="works__marquee" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="works__track">
-                        <div class="work__item">
-                            <img src="imagenes/03. Cristobal.png" alt="Cristóbal" loading="lazy">
-                        </div>
-                        <div class="work__item">
-                            <img src="imagenes/04. Ignacio.png" alt="Ignacio" loading="lazy">
-                        </div>
-                        <div class="work__item">
-                            <img src="imagenes/05. Kevin.png" alt="Kevin" loading="lazy">
-                        </div>
-                        <div class="work__item">
-                            <img src="imagenes/06. Tiare.png" alt="Tiare" loading="lazy">
-                        </div>
-                        <!-- Duplicados para loop infinito -->
-                        <div class="work__item">
-                            <img src="imagenes/03. Cristobal.png" alt="Cristóbal" loading="lazy">
-                        </div>
-                        <div class="work__item">
-                            <img src="imagenes/04. Ignacio.png" alt="Ignacio" loading="lazy">
-                        </div>
-                        <div class="work__item">
-                            <img src="imagenes/05. Kevin.png" alt="Kevin" loading="lazy">
-                        </div>
-                        <div class="work__item">
-                            <img src="imagenes/06. Tiare.png" alt="Tiare" loading="lazy">
+                <!-- Team slider -->
+                <div class="works__slider" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <button class="works__arrow works__arrow--prev" id="teamPrev" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="works__viewport">
+                        <div class="works__track" id="teamTrack">
+                            <div class="work__item">
+                                <img src="imagenes/03. Cristobal.png" alt="Cristóbal" loading="lazy">
+                            </div>
+                            <div class="work__item">
+                                <img src="imagenes/04. Ignacio.png" alt="Ignacio" loading="lazy">
+                            </div>
+                            <div class="work__item">
+                                <img src="imagenes/05. Kevin.png" alt="Kevin" loading="lazy">
+                            </div>
+                            <div class="work__item">
+                                <img src="imagenes/06. Tiare.png" alt="Tiare" loading="lazy">
+                            </div>
                         </div>
                     </div>
+                    <button class="works__arrow works__arrow--next" id="teamNext" aria-label="Siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <!-- Mobile nav -->
+                <div class="works__mobile-nav">
+                    <button class="works__arrow" id="teamPrevMobile" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="works__arrow" id="teamNextMobile" aria-label="Siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
@@ -451,92 +563,6 @@
             </div>
         </section>
 
-        <!-- CTA SECTION -->
-        <section class="cta" id="contact">
-            <div class="cta__parallax-bg"></div>
-            <div class="container">
-                <div class="cta__content">
-                    <div class="cta__icon" data-aos="flip-left" data-aos-duration="800" data-aos-delay="200">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <h4 class="cta__text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                        Nuestro equipo ha liderado grandes casos de éxito en nuestro pasado, siendo reconocidos
-                        a nivel nacional e internacional por múltiples campañas de comunicación.
-                    </h4>
-                    <h4 class="cta__highlight" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                        ¿Quieres lograr tu próximo éxito? ¡Hablemos!
-                    </h4>
-                </div>
-
-                <!-- CONTACT FORM -->
-                <div class="contact-form-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/cristobal@agenciapalena.cl" method="POST">
-                        <!-- FormSubmit config -->
-                        <input type="hidden" name="_subject" value="Nuevo mensaje desde agenciapalena.cl">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="box">
-                        <input type="hidden" name="_next" value="thankyou.html">
-                        <input type="text" name="_honey" style="display:none">
-                        <div class="contact-form__row">
-                            <div class="contact-form__group">
-                                <label class="contact-form__label" for="name">Nombre</label>
-                                <input class="contact-form__input" type="text" id="name" name="name" placeholder="Tu nombre completo" required>
-                                <span class="contact-form__line"></span>
-                            </div>
-                            <div class="contact-form__group">
-                                <label class="contact-form__label" for="email">Email</label>
-                                <input class="contact-form__input" type="email" id="email" name="email" placeholder="tu@email.com" required>
-                                <span class="contact-form__line"></span>
-                            </div>
-                        </div>
-                        <div class="contact-form__row">
-                            <div class="contact-form__group">
-                                <label class="contact-form__label" for="phone">Telefono</label>
-                                <div class="contact-form__phone-wrapper">
-                                    <span class="contact-form__phone-prefix">+56</span>
-                                    <input class="contact-form__input contact-form__phone-input" type="tel" id="phone" name="phone" placeholder="9 1234 5678" maxlength="9" pattern="9[0-9]{8}" required>
-                                </div>
-                                <input type="hidden" id="phoneHidden" name="Teléfono">
-                                <span class="contact-form__line"></span>
-                                <span class="contact-form__error" id="phoneError">Debe comenzar con 9 y tener 9 dígitos</span>
-                            </div>
-                            <div class="contact-form__group">
-                                <label class="contact-form__label" for="subject">Asunto</label>
-                                <select class="contact-form__input contact-form__select" id="subject" name="subject" required>
-                                    <option value="" disabled selected>Selecciona un servicio</option>
-                                    <option value="marketing">Marketing Digital</option>
-                                    <option value="rrss">Redes Sociales</option>
-                                    <option value="publicidad">Publicidad</option>
-                                    <option value="branding">Branding</option>
-                                    <option value="otro">Otro</option>
-                                </select>
-                                <span class="contact-form__line"></span>
-                            </div>
-                        </div>
-                        <div class="contact-form__group contact-form__group--full">
-                            <label class="contact-form__label" for="message">Mensaje</label>
-                            <textarea class="contact-form__input contact-form__textarea" id="message" name="message" placeholder="Cuéntanos sobre tu proyecto..." rows="5" required></textarea>
-                            <span class="contact-form__line"></span>
-                        </div>
-                        <div class="contact-form__submit">
-                            <button type="submit" class="btn btn--glow">
-                                <span>Enviar mensaje</span>
-                                <i class="fas fa-paper-plane btn__icon"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- LOCATION SECTION -->
-        <section class="location" id="location">
-            <div class="location__address">
-                <p>Avenida Las Condes 7700, Oficina 205A, Las Condes, Santiago.</p>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.8743296301595!2d-70.5568697245371!3d-33.40044269495253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cec658775fc9%3A0xe4db87ab5e3c8831!2sAv.%20Las%20Condes%207700%2C%207560464%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1774361470791!5m2!1ses!2scl" style="border:0; width: 100%; height: 450px; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
     </main>
 
     <!-- FOOTER -->
@@ -550,16 +576,35 @@
                         </div>
                     </div>
                     <p class="footer__tagline">Agencia Palena. Transformamos marcas en referentes.</p>
+                    <div class="footer__contact">
+                        <a href="mailto:contacto@agenciapalena.cl" class="footer__email">
+                            <i class="fas fa-envelope"></i> contacto@agenciapalena.cl
+                        </a>
+                    </div>
                 </div>
+                
+                <div class="footer__links" data-aos="fade-up" data-aos-duration="600">
+                    <h4 class="footer__links-title">Navegación</h4>
+                    <ul class="footer__links-list">
+                        <li><a href="#services">Qué hacemos</a></li>
+                        <li><a href="#clients">Marcas / Clientes</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                
                 <div class="footer__social" data-aos="fade-left" data-aos-duration="600">
-                    <a href="https://instagram.com/agenciapalena" target="_blank" rel="noopener noreferrer"
-                        class="social__link" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/agencia-palena-cl/" target="_blank"
-                        rel="noopener noreferrer" class="social__link" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+                    <h4 class="footer__links-title">Síguenos</h4>
+                    <div class="footer__social-links">
+                        <a href="https://instagram.com/agenciapalena" target="_blank" rel="noopener noreferrer"
+                            class="social__link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/agencia-palena-cl/" target="_blank"
+                            rel="noopener noreferrer" class="social__link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="footer__bottom">
@@ -573,9 +618,9 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- FLOATING CONTACT BUTTON -->
-    <a href="#contact" class="floating-contact" aria-label="Contact us">
-        <span>contactanos</span>
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/56940329987" target="_blank" class="floating-contact" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- AOS Library -->
@@ -757,6 +802,65 @@
                 this.style.transform = 'translate(0, 0)';
             });
         });
+
+        // ===== TEAM SLIDER =====
+        (function() {
+            const track = document.getElementById('teamTrack');
+            const prevBtn = document.getElementById('teamPrev');
+            const nextBtn = document.getElementById('teamNext');
+            const prevMobile = document.getElementById('teamPrevMobile');
+            const nextMobile = document.getElementById('teamNextMobile');
+            if (!track) return;
+
+            let pos = 0;
+
+            function getItemsVisible() {
+                const w = window.innerWidth;
+                if (w <= 768) return 1;
+                if (w <= 1024) return 2;
+                return 3;
+            }
+
+            function getItemWidth() {
+                const item = track.querySelector('.work__item');
+                if (!item) return 0;
+                const style = getComputedStyle(track);
+                const gap = parseFloat(style.gap) || 0;
+                return item.offsetWidth + gap;
+            }
+
+            function totalItems() {
+                return track.querySelectorAll('.work__item').length;
+            }
+
+            function maxPos() {
+                return Math.max(0, totalItems() - getItemsVisible());
+            }
+
+            function slide() {
+                track.style.transform = 'translateX(-' + (pos * getItemWidth()) + 'px)';
+            }
+
+            function goPrev() {
+                pos = pos <= 0 ? maxPos() : pos - 1;
+                slide();
+            }
+
+            function goNext() {
+                pos = pos >= maxPos() ? 0 : pos + 1;
+                slide();
+            }
+
+            if (prevBtn) prevBtn.addEventListener('click', goPrev);
+            if (nextBtn) nextBtn.addEventListener('click', goNext);
+            if (prevMobile) prevMobile.addEventListener('click', goPrev);
+            if (nextMobile) nextMobile.addEventListener('click', goNext);
+
+            window.addEventListener('resize', function() {
+                if (pos > maxPos()) pos = maxPos();
+                slide();
+            });
+        })();
 
         // ===== TILT ON SERVICE CARDS =====
         document.querySelectorAll('.service__card').forEach(card => {
