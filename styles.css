@@ -37,7 +37,7 @@
 *, *::before, *::after {
     margin: 0;
     padding: 0;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
 }
 
 html {
@@ -669,7 +669,7 @@ img { max-width: 100%; height: auto; display: block; }
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: #000;
+    background: url('imagenes/palenabg-ppt.png') center center / cover no-repeat;
 }
 
 .hero__slider {
@@ -843,7 +843,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* ===== ABOUT ===== */
 .about {
     padding: 8rem 0;
-    background: #000000;
+    background: url('imagenes/palenabg-ppt.png') center center / cover no-repeat;
     position: relative;
 }
 
@@ -930,8 +930,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ===== SERVICES ===== */
 .services {
-    padding: 6rem 0;
-    background: #000000;
+    padding: 3rem 0;
+    background: url('imagenes/palenabg-ppt.png') center center / cover no-repeat;
     position: relative;
     overflow-x: hidden;
 }
@@ -942,7 +942,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .services__header {
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .services .section__label {
@@ -1002,7 +1002,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .service__card {
-    background: #000000;
+    background: transparent;
     padding: 2.5rem clamp(1rem, 2vw, 3rem);
     border-radius: 0;
     min-width: 0;
@@ -1251,7 +1251,7 @@ img { max-width: 100%; height: auto; display: block; }
     content: '';
     position: absolute;
     inset: 0;
-    background: #000000;
+    background: url('imagenes/palenabg-ppt.png') center center / cover no-repeat;
 }
 
 .stats__grid {
@@ -1346,9 +1346,11 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Infinite Marquee */
 .clients__marquee {
-    margin-top: 3.5rem;
-    padding: 2rem 0;
+    margin-top: 0.25rem;
+    padding: 0.25rem 0;
     position: relative;
+    overflow: hidden;
+    width: 100%;
 }
 
 .experience {
@@ -1368,7 +1370,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 @keyframes marquee {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    100% { transform: translateX(-66.667%); }
 }
 
 .client__logo {
@@ -1376,9 +1378,9 @@ img { max-width: 100%; height: auto; display: block; }
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 280px;
-    height: 180px;
-    padding: 2.5rem;
+    width: 150px;
+    height: 80px;
+    padding: 0.75rem;
     background: white;
     border-radius: 0;
     border: none;
@@ -1394,8 +1396,8 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .client__logo img {
-    max-height: 120px;
-    max-width: 220px;
+    max-height: 55px;
+    max-width: 130px;
     width: auto;
     object-fit: contain;
     filter: brightness(0);
@@ -1471,7 +1473,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ===== WORKS SECTION ===== */
 .works {
-    background: #0d0d1a;
+    background: url('imagenes/palenabg-ppt.png') center center / cover no-repeat;
     padding: 4rem 0 3rem;
 }
 
@@ -1621,15 +1623,13 @@ img { max-width: 100%; height: auto; display: block; }
     padding: 8rem 0;
     position: relative;
     overflow: hidden;
-    background: var(--color-dark);
+    background: url('imagenes/palenabg-ppt.png') center center / cover no-repeat;
 }
 
 .cta__parallax-bg {
     position: absolute;
     inset: -50px;
-    background:
-        linear-gradient(135deg, rgba(26, 26, 46, 0.92) 0%, rgba(26, 26, 46, 0.85) 100%),
-        url('imagenes/DSC06495.jpg') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.7) 0%, rgba(13, 13, 26, 0.75) 100%);
     z-index: 0;
 }
 
@@ -1685,7 +1685,7 @@ img { max-width: 100%; height: auto; display: block; }
     max-width: none;
     margin: 0;
     padding: 3rem;
-    background: linear-gradient(145deg, rgba(26, 26, 46, 0.95), rgba(13, 13, 26, 0.98));
+    background: url('imagenes/palenabg-ppt.png') center center / cover no-repeat;
     border: 1px solid rgba(116, 237, 0, 0.15);
     border-radius: 20px;
     backdrop-filter: blur(12px);
@@ -1742,8 +1742,10 @@ img { max-width: 100%; height: auto; display: block; }
     color: var(--color-white);
     font-family: var(--font-family);
     font-size: var(--font-size-sm);
+    line-height: 1.5;
     transition: var(--transition);
     outline: none;
+    min-height: 2.8rem;
 }
 
 .contact-form__input::placeholder {
@@ -1762,13 +1764,36 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .contact-form__select {
+    width: 100%;
     appearance: none;
     -webkit-appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2374ed00' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 1rem center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(116, 237, 0, 0.3);
+    border-radius: 12px;
+    padding: 0.9rem 1rem;
     padding-right: 2.5rem;
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
     cursor: pointer;
+    transition: var(--transition);
+    outline: none;
+    min-height: 2.8rem;
+}
+
+.contact-form__select:hover {
+    border-color: rgba(116, 237, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.contact-form__select:focus {
+    border-color: var(--color-primary);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(116, 237, 0, 0.2);
 }
 
 .contact-form__select option {
@@ -1780,6 +1805,7 @@ img { max-width: 100%; height: auto; display: block; }
     resize: vertical;
     min-height: 130px;
     border-radius: 12px;
+    padding: 0.9rem 1rem;
 }
 
 .contact-form__line {
@@ -1807,12 +1833,13 @@ img { max-width: 100%; height: auto; display: block; }
 /* Phone input with prefix */
 .contact-form__phone-wrapper {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(116, 237, 0, 0.3);
     border-radius: 12px;
     transition: var(--transition);
     overflow: hidden;
+    min-height: 2.8rem;
 }
 
 .contact-form__phone-wrapper:focus-within {
@@ -1842,7 +1869,15 @@ img { max-width: 100%; height: auto; display: block; }
     background: transparent !important;
     box-shadow: none !important;
     border-radius: 0 !important;
-    padding-left: 0.8rem;
+    padding: 0.9rem 0.8rem;
+    line-height: 1.5;
+    font-size: var(--font-size-sm);
+    color: var(--color-white);
+    font-family: var(--font-family);
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .contact-form__phone-input:focus {
@@ -1877,7 +1912,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ===== FOOTER ===== */
 .footer {
-    background: #0d0d1a;
+    background: url('imagenes/palenabg-ppt.png') center center / cover no-repeat;
     padding: 3.5rem 0 1.5rem;
 }
 
@@ -2005,24 +2040,25 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ===== CLIENTES ===== */
 .clients-section {
-    padding: 6rem 0;
+    padding: 2.5rem 0 1.5rem;
     background: var(--color-white);
 }
 
 .clients-section .section__title {
     color: #74ed00;
     margin-bottom: 0.5rem;
+    font-size: var(--font-size-3xl);
 }
 
 .clients-section .section__subtitle {
     text-align: center;
     color: #9346b6;
-    margin-bottom: 2rem;
-    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
 }
 
 .clients-section .clients__marquee {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 /* ===== ALIANZAS INLINE FIX ===== */
@@ -2100,7 +2136,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .experience__box {
-    background: #111;
+    background: url('imagenes/palenabg-ppt.png') center center / cover no-repeat;
     border-radius: 12px;
     padding: 2.5rem;
     color: #fff;
@@ -2164,12 +2200,14 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .testimonial__img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
     margin: 0 auto 1rem;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
+    background-color: white;
+    padding: 8px;
 }
 
 .testimonial__stars {
@@ -2323,7 +2361,7 @@ img { max-width: 100%; height: auto; display: block; }
     /* Navbar: static so it sits above the video, not over it */
     .header {
         position: relative;
-        background: #000;
+        background: url('imagenes/palenabg-ppt.png') center top / cover no-repeat;
     }
     .header--hidden {
         transform: none;
@@ -2597,7 +2635,7 @@ img { max-width: 100%; height: auto; display: block; }
     flex-direction: column;
     gap: 1rem;
     padding: 2rem 1.5rem;
-    background: linear-gradient(145deg, rgba(26, 26, 46, 0.95), rgba(13, 13, 26, 0.98));
+    background: url('imagenes/palenabg-ppt.png') center center / cover no-repeat;
     border: 1px solid rgba(116, 237, 0, 0.15);
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(116, 237, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.04);
