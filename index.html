@@ -109,10 +109,10 @@
                 <li><a href="#about" class="nav__link">Quiénes Somos</a></li>
                 <li><a href="#services" class="nav__link">Servicios</a></li>
                 <li><a href="#experience" class="nav__link">Experiencia</a></li>
-                <li><a href="#contact" class="nav__link">Contacto</a></li>
+                <li><a href="#contact-final" class="nav__link">Contacto</a></li>
             </ul>
             <div class="nav__cta">
-                <a href="#contact" class="btn btn--nav">Agendar reunión</a>
+                <a href="#contact-final" class="btn btn--nav">Agendar reunión</a>
                 <a href="https://wa.me/56940329987" target="_blank" class="btn btn--whatsapp-nav" aria-label="WhatsApp">
                     <i class="fab fa-whatsapp"></i>
                 </a>
@@ -148,7 +148,7 @@
                             class="menu-dot">.</span></a></li>
                 <li class="menu-overlay__item"><a href="#experience" class="menu-overlay__link">Experiencia<span
                             class="menu-dot">.</span></a></li>
-                <li class="menu-overlay__item"><a href="#contact" class="menu-overlay__link">Contacto<span
+                <li class="menu-overlay__item"><a href="#contact-final" class="menu-overlay__link">Contacto<span
                             class="menu-dot">.</span></a></li>
             </ul>
             <div class="menu-overlay__social">
@@ -168,22 +168,22 @@
         <section class="hero" id="home">
             <div class="hero__slider">
                 <div class="hero__slide hero__slide--active">
-                    <video class="hero__video" autoplay muted loop playsinline>
-                        <source src="imagenes/Agencia Palena.mp4" type="video/mp4">
+                    <!-- Video Desktop -->
+                    <video class="hero__video hero__video--desktop" autoplay muted loop playsinline>
+                        <source src="imagenes/Agencia Palena Completo.mp4" type="video/mp4">
+                    </video>
+                    <!-- Video Mobile -->
+                    <video class="hero__video hero__video--mobile" autoplay muted loop playsinline>
+                        <source src="imagenes/Agencia Palena movil.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
 
-            <!-- Scroll indicator -->
-            <div class="scroll-indicator">
-                <div class="scroll-indicator__mouse">
-                    <div class="scroll-indicator__wheel"></div>
-                </div>
-                <span>Scroll</span>
+            <!-- CTA Button -->
+            <div class="hero__cta">
+                <a href="#contact-final" class="btn btn--glow">Agendar reunión</a>
             </div>
         </section>
-
-        <!-- ALIANZAS SECTION -->
         <section class="alianzas" id="alianzas">
             <div class="container">
                 <!-- Infinite alliance marquee -->
@@ -247,7 +247,7 @@
                         <img src="imagenes/rayo verde.png" alt="separator">
                     </div>
                     <div class="service__card">
-                        <h3 class="service__title">Webs + IA</h3>
+                        <h3 class="service__title">IA</h3>
                         <p class="service__desc">Desarrollo & Tecnología</p>
                         <p class="service__detail">Sitios web a medida<br>Automatización online Inteligencia<br>Artificial</p>
                     </div>
@@ -255,9 +255,237 @@
             </div>
         </section>
 
-        <!-- CONTACT FORM -->
-        <section class="contact-section" id="contact">
+
+
+                <!-- GREEN DIVIDER -->
+        <div class="divider-ray">
+            <img src="imagenes/rayo verde.png" alt="Separator" class="divider-ray__image">
+        </div>
+
+
+        <!-- EXPERIENCE / CLIENTES -->
+        <section class="experience" id="experience">
             <div class="container">
+                <div class="experience__layout" data-aos="fade-up" data-aos-duration="800">
+                    <!-- Fotos a la izquierda -->
+                    <div class="experience__photos">
+                        <div class="experience__photo-container">
+                            <img src="imagenes/02. diego.jpg" alt="Diego Cavagnaro" loading="lazy" class="experience__photo">
+                            <div class="experience__photo-info">
+                                <p class="experience__photo-name">Diego</p>
+                                <p class="experience__photo-name">Cavagnaro</p>
+                            </div>
+                        </div>
+                        <div class="experience__photo-container">
+                            <img src="imagenes/01. andres.jpg" alt="Andrés Sadler" loading="lazy" class="experience__photo">
+                            <div class="experience__photo-info">
+                                <p class="experience__photo-name">Andrés</p>
+                                <p class="experience__photo-name">Sadler</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenido a la derecha -->
+                    <div class="experience__content">
+                        <div class="experience__box">
+                            <span class="section__label">Trayectoria en el mercado</span>
+                            <h2 class="section__title">Experiencia</h2>
+                            <p>
+                                <span class="experience__highlight">Andrés Sadler</span>, fundador del portal inmobiliario PortalTerreno.com en Chile y México, y <span class="experience__highlight">Diego Cavagnaro</span>, gerente de ventas con más de una década de experiencia, combinan su trayectoria digital y comercial junto a un equipo especializado para fortalecer la presencia de sus clientes y generar resultados medibles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- GREEN DIVIDER -->
+        <div class="divider-ray">
+            <img src="imagenes/rayo verde.png" alt="Separator" class="divider-ray__image">
+        </div>
+
+
+        <!-- STATS -->
+        <section class="stats" id="stats">
+            <img src="imagenes/rayo verde.png" alt="" class="stats__bg-ray" aria-hidden="true">
+            <div class="stats__bg-shapes">
+                <div class="stats__shape stats__shape--1"></div>
+                <div class="stats__shape stats__shape--2"></div>
+                <div class="stats__shape stats__shape--3"></div>
+            </div>
+            <div class="container">
+                <div data-aos="fade-up" data-aos-duration="800" style="margin-bottom: 2rem;">
+                    <span class="section__label section__label--center">Nuestro impacto</span>
+                    <h2 class="section__title section__title--center">Métricas</h2>
+                    <div class="section__divider section__divider--center"></div>
+                </div>
+                <div class="stats__grid">
+                    <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="0">
+                        <span class="stat__prefix">+</span>
+                        <span class="stat__number" data-target="30">0</span>
+                        <h3 class="stat__title">Clientes activos</h3>
+                    </div>
+                    <div class="stats__separator">
+                        <img src="imagenes/rayo verde.png" alt="separator">
+                    </div>
+                    <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="150">
+                        <span class="stat__prefix"></span>
+                        <span class="stat__number" data-target="850" data-suffix=" M">0</span>
+                        <h3 class="stat__title">Inversión administrada</h3>
+                    </div>
+                    <div class="stats__separator">
+                        <img src="imagenes/rayo verde.png" alt="separator">
+                    </div>
+                    <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                        <span class="stat__prefix">+</span>
+                        <span class="stat__number" data-target="500000" data-format-thousands="true">0</span>
+                        <h3 class="stat__title">Leads generados</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+                    
+                  
+
+        <!-- CLIENTES -->
+        <section class="clients-section" id="clients">
+            <div class="container">
+                <div data-aos="fade-up" data-aos-duration="800">
+                    <span class="section__label section__label--center">Empresas que confían</span>
+                    <h2 class="section__title section__title--center">Clientes</h2>
+                    <div class="section__divider section__divider--center"></div>
+                </div>
+
+                <!-- Infinite client marquee -->
+                <div class="clients__marquee" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="clients__track">
+                        <div class="client__logo">
+                            <img src="imagenes/logo kaiser color.png" alt="Kaiser" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="imagenes/logo portal terreno marketplace.png" alt="Portal Terreno" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="imagenes/logo-terra-segura (1).png" alt="Terra Segura" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="imagenes/LOGO OG.png" alt="OG" loading="lazy">
+                        </div>
+                        <!-- Duplicados para loop infinito -->
+                        <div class="client__logo">
+                            <img src="imagenes/logo kaiser color.png" alt="Kaiser" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="imagenes/logo portal terreno marketplace.png" alt="Portal Terreno" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="imagenes/logo-terra-segura (1).png" alt="Terra Segura" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="imagenes/LOGO OG.png" alt="OG" loading="lazy">
+                        </div>
+                        <!-- Terceros para suavidad -->
+                        <div class="client__logo">
+                            <img src="imagenes/logo kaiser color.png" alt="Kaiser" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="imagenes/logo portal terreno marketplace.png" alt="Portal Terreno" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="imagenes/logo-terra-segura (1).png" alt="Terra Segura" loading="lazy">
+                        </div>
+                        <div class="client__logo">
+                            <img src="imagenes/LOGO OG.png" alt="OG" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORKS / PORTFOLIO (SLIDER EQUIPO) -->
+        <section class="works" id="works">
+            <div class="container">
+                <div data-aos="fade-up" data-aos-duration="800">
+                    <span class="section__label section__label--center">Nuestro talento</span>
+                    <h2 class="section__title section__title--center">Conoce al #Equipo</h2>
+                    <div class="section__divider section__divider--center"></div>
+                </div>
+
+                <!-- Team slider -->
+                <div class="works__slider" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <button class="works__arrow works__arrow--prev" id="teamPrev" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="works__viewport">
+                        <div class="works__track" id="teamTrack">
+                            <div class="work__item">
+                                <img src="imagenes/03. Cristobal.png" alt="Cristóbal" loading="lazy">
+                            </div>
+                            <div class="work__item">
+                                <img src="imagenes/04. Ignacio.png" alt="Ignacio" loading="lazy">
+                            </div>
+                            <div class="work__item">
+                                <img src="imagenes/05. Kevin.png" alt="Kevin" loading="lazy">
+                            </div>
+                                                        <div class="work__item">
+                                <img src="imagenes/07. Valentina.png" alt="Valentina" loading="lazy">
+                            </div>
+                            <div class="work__item">
+                                <img src="imagenes/06. Tiare.png" alt="Tiare" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="works__arrow works__arrow--next" id="teamNext" aria-label="Siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <!-- Mobile nav -->
+                <div class="works__mobile-nav">
+                    <button class="works__arrow" id="teamPrevMobile" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="works__arrow" id="teamNextMobile" aria-label="Siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS -->
+        <section class="testimonios" id="testimonios">
+            <div class="container">
+                <div data-aos="fade-up" data-aos-duration="800">
+                    <span class="section__label section__label--center">Nuestros clientes</span>
+                    <h2 class="section__title section__title--center">Testimonios</h2>
+                    <div class="section__divider section__divider--center"></div>
+                </div>
+
+                <!-- Testimonials Grid -->
+                <div class="testimonials__grid" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="testimonial__card">
+                        <img src="imagenes/Logo Kaiser.png" alt="Kaiser" loading="lazy" class="testimonial__img">
+                        <p class="testimonial__text">"Excelente servicio, lograron aumentar nuestra visibilidad y ventas en poco tiempo."</p>
+                    </div>
+                    <div class="testimonial__card">
+                        <img src="imagenes/KIT-OG-AM.png" alt="Original Burger's" loading="lazy" class="testimonial__img">
+                        <p class="testimonial__text">"Muy profesionales, entendieron nuestras necesidades y ejecutaron una estrategia efectiva."</p>
+                    </div>
+                    <div class="testimonial__card">
+                        <img src="imagenes/hitch_logo.png" alt="Hitch Group" loading="lazy" class="testimonial__img">
+                        <p class="testimonial__text">"Gran equipo, resultados concretos y una comunicación constante durante todo el proceso."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- FINAL CONTACT SECTION -->
+        <section class="contact-section" id="contact-final">
+            <div class="container">
+                <div data-aos="fade-up" data-aos-duration="800" style="margin-bottom: 2rem;">
+                    <span class="section__label section__label--center">Hablemos</span>
+                    <h2 class="section__title section__title--center">¿Listo para crecer?</h2>
+                    <div class="section__divider section__divider--center"></div>
+                </div>
                 <div class="contact__layout">
                     <!-- FORMULARIO -->
                     <div class="contact-form-wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
@@ -317,8 +545,8 @@
                             </div>
                         </form>
                     </div>
-                    
-                    <!-- INFO DE CONTACTO -->
+
+                      <!-- INFO DE CONTACTO -->
                     <div class="contact__info-compact">
                         <div class="contact__info-item-compact">
                             <i class="fab fa-whatsapp"></i>
@@ -360,222 +588,6 @@
             </div>
         </section>
 
-                <!-- GREEN DIVIDER -->
-        <div class="divider-ray">
-            <img src="imagenes/rayo verde.png" alt="Separator" class="divider-ray__image">
-        </div>
-
-
-        <!-- EXPERIENCE / CLIENTES -->
-        <section class="experience" id="experience">
-            <div class="container">
-                <div class="experience__layout" data-aos="fade-up" data-aos-duration="800">
-                    <!-- Fotos a la izquierda -->
-                    <div class="experience__photos">
-                        <div class="experience__photo-container">
-                            <img src="imagenes/02. diego.jpg" alt="Diego Cavagnaro" loading="lazy" class="experience__photo">
-                            <div class="experience__photo-info">
-                                <p class="experience__photo-name">Diego</p>
-                                <p class="experience__photo-name">Cavagnaro</p>
-                            </div>
-                        </div>
-                        <div class="experience__photo-container">
-                            <img src="imagenes/01. andres.jpg" alt="Andrés Sadler" loading="lazy" class="experience__photo">
-                            <div class="experience__photo-info">
-                                <p class="experience__photo-name">Andrés</p>
-                                <p class="experience__photo-name">Sadler</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Contenido a la derecha -->
-                    <div class="experience__content">
-                        <div class="experience__box">
-                            <h2 class="section__title">Experiencia</h2>
-                            <p class="section__subtitle">Trayectoria en el mercado que nos avala</p>
-                            <p>
-                                <span class="experience__highlight">Andrés Sadler</span>, fundador del portal inmobiliario PortalTerreno.com en Chile y México, y <span class="experience__highlight">Diego Cavagnaro</span>, gerente de ventas con más de una década de experiencia, combinan su trayectoria digital y comercial junto a un equipo especializado para fortalecer la presencia de sus clientes y generar resultados medibles.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-                <!-- GREEN DIVIDER -->
-        <div class="divider-ray">
-            <img src="imagenes/rayo verde.png" alt="Separator" class="divider-ray__image">
-        </div>
-
-
-        <!-- STATS -->
-        <section class="stats" id="stats">
-            <img src="imagenes/rayo verde.png" alt="" class="stats__bg-ray" aria-hidden="true">
-            <div class="stats__bg-shapes">
-                <div class="stats__shape stats__shape--1"></div>
-                <div class="stats__shape stats__shape--2"></div>
-                <div class="stats__shape stats__shape--3"></div>
-            </div>
-            <div class="container">
-                <div class="stats__grid">
-                    <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="0">
-                        <span class="stat__prefix stat__prefix--hidden"></span>
-                        <span class="stat__number" data-target="756">0</span>
-                        <h3 class="stat__title">Proyectos completados</h3>
-                    </div>
-                    <div class="stats__separator">
-                        <img src="imagenes/rayo verde.png" alt="separator">
-                    </div>
-                    <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="150">
-                        <span class="stat__prefix stat__prefix--hidden"></span>
-                        <span class="stat__number" data-target="800">0</span>
-                        <h3 class="stat__title">Campañas activas</h3>
-                    </div>
-                    <div class="stats__separator">
-                        <img src="imagenes/rayo verde.png" alt="separator">
-                    </div>
-                    <div class="stat__item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                        <span class="stat__prefix stat__prefix--hidden"></span>
-                        <span class="stat__number" data-target="8">0</span>
-                        <h3 class="stat__title">Años en el mercado</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CLIENTES -->
-        <section class="clients-section" id="clients">
-            <div class="container">
-                <div data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="section__title section__title--center">Clientes</h2>
-                    <p class="section__subtitle">Empresas que confían en nosotros</p>
-                </div>
-
-                <!-- Infinite client marquee -->
-                <div class="clients__marquee" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="clients__track">
-                        <div class="client__logo">
-                            <img src="imagenes/logo kaiser color.png" alt="Kaiser" loading="lazy">
-                        </div>
-                        <div class="client__logo">
-                            <img src="imagenes/logo portal terreno marketplace.png" alt="Portal Terreno" loading="lazy">
-                        </div>
-                        <div class="client__logo">
-                            <img src="imagenes/logo-terra-segura (1).png" alt="Terra Segura" loading="lazy">
-                        </div>
-                        <div class="client__logo">
-                            <img src="imagenes/LOGO OG.png" alt="OG" loading="lazy">
-                        </div>
-                        <!-- Duplicados para loop infinito -->
-                        <div class="client__logo">
-                            <img src="imagenes/logo kaiser color.png" alt="Kaiser" loading="lazy">
-                        </div>
-                        <div class="client__logo">
-                            <img src="imagenes/logo portal terreno marketplace.png" alt="Portal Terreno" loading="lazy">
-                        </div>
-                        <div class="client__logo">
-                            <img src="imagenes/logo-terra-segura (1).png" alt="Terra Segura" loading="lazy">
-                        </div>
-                        <div class="client__logo">
-                            <img src="imagenes/LOGO OG.png" alt="OG" loading="lazy">
-                        </div>
-                        <!-- Terceros para suavidad -->
-                        <div class="client__logo">
-                            <img src="imagenes/logo kaiser color.png" alt="Kaiser" loading="lazy">
-                        </div>
-                        <div class="client__logo">
-                            <img src="imagenes/logo portal terreno marketplace.png" alt="Portal Terreno" loading="lazy">
-                        </div>
-                        <div class="client__logo">
-                            <img src="imagenes/logo-terra-segura (1).png" alt="Terra Segura" loading="lazy">
-                        </div>
-                        <div class="client__logo">
-                            <img src="imagenes/LOGO OG.png" alt="OG" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- WORKS / PORTFOLIO (SLIDER EQUIPO) -->
-        <section class="works" id="works">
-            <div class="container">
-                <div data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="section__title section__title--center">Conoce al #Equipo</h2>
-                </div>
-
-                <!-- Team slider -->
-                <div class="works__slider" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <button class="works__arrow works__arrow--prev" id="teamPrev" aria-label="Anterior">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <div class="works__viewport">
-                        <div class="works__track" id="teamTrack">
-                            <div class="work__item">
-                                <img src="imagenes/03. Cristobal.png" alt="Cristóbal" loading="lazy">
-                            </div>
-                            <div class="work__item">
-                                <img src="imagenes/04. Ignacio.png" alt="Ignacio" loading="lazy">
-                            </div>
-                            <div class="work__item">
-                                <img src="imagenes/05. Kevin.png" alt="Kevin" loading="lazy">
-                            </div>
-                            <div class="work__item">
-                                <img src="imagenes/06. Tiare.png" alt="Tiare" loading="lazy">
-                            </div>
-                        </div>
-                    </div>
-                    <button class="works__arrow works__arrow--next" id="teamNext" aria-label="Siguiente">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-                <!-- Mobile nav -->
-                <div class="works__mobile-nav">
-                    <button class="works__arrow" id="teamPrevMobile" aria-label="Anterior">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="works__arrow" id="teamNextMobile" aria-label="Siguiente">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- TESTIMONIOS -->
-        <section class="testimonios" id="testimonios">
-            <div class="container">
-                <div data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="section__title section__title--center">Testimonios</h2>
-                    <p class="section__subtitle">¿Qué dicen nuestros clientes?</p>
-                </div>
-
-                <!-- Testimonials Grid -->
-                <div class="testimonials__grid" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="testimonial__card">
-                        <img src="imagenes/Logo Kaiser.png" alt="Cliente 1" loading="lazy" class="testimonial__img">
-                        <div class="testimonial__stars">★★★★★</div>
-                        <p class="testimonial__text">Excelente servicio, lograron aumentar nuestra visibilidad y ventas en poco tiempo.</p>
-                        <h4 class="testimonial__name">Héctor R.</h4>
-                        <p class="testimonial__role">Kaiser SpA</p>
-                    </div>
-                    <div class="testimonial__card">
-                        <img src="imagenes/KIT-OG-AM.png" alt="Cliente 2" loading="lazy" class="testimonial__img">
-                        <div class="testimonial__stars">★★★★★</div>
-                        <p class="testimonial__text">Muy profesionales, entendieron nuestras necesidades y ejecutaron una estrategia efectiva.</p>
-                        <h4 class="testimonial__name">Felipe G.</h4>
-                        <p class="testimonial__role">Original Burger's</p>
-                    </div>
-                    <div class="testimonial__card">
-                        <img src="imagenes/hitch_logo.png" alt="Cliente 3" loading="lazy" class="testimonial__img">
-                        <div class="testimonial__stars">★★★★★</div>
-                        <p class="testimonial__text">Gran equipo, resultados concretos y una comunicación constante durante todo el proceso.</p>
-                        <h4 class="testimonial__name">Marco D.</h4>
-                        <p class="testimonial__role">Hitch Group</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <!-- FOOTER -->
@@ -602,7 +614,7 @@
                         <li><a href="#services">Qué hacemos</a></li>
                         <li><a href="#clients">Marcas / Clientes</a></li>
                         <li><a href="#testimonios">Testimonios</a></li>
-                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#contact-final">Contacto</a></li>
                     </ul>
                 </div>
                 
@@ -634,6 +646,12 @@
     <!-- FLOATING WHATSAPP BUTTON -->
     <a href="https://wa.me/56940329987" target="_blank" class="floating-contact" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- FLOATING AGENDAR BUTTON -->
+    <a href="#contact-final" class="floating-agendar" id="floatingAgendar">
+        <i class="fas fa-calendar-alt"></i>
+        <span>Agendar</span>
     </a>
 
     <!-- AOS Library -->
@@ -751,12 +769,22 @@
         function startCounters() {
             counters.forEach(counter => {
                 const target = +counter.getAttribute('data-target');
+                const suffix = counter.getAttribute('data-suffix') || '';
+                const useThousands = counter.getAttribute('data-format-thousands') === 'true';
+                
+                if (isNaN(target) || target === 0) return;
+                
                 const duration = 2500;
                 const startTime = performance.now();
 
                 const update = (now) => {
                     const progress = Math.min((now - startTime) / duration, 1);
-                    counter.textContent = Math.ceil(easeOutQuart(progress) * target).toLocaleString();
+                    let value = Math.ceil(easeOutQuart(progress) * target);
+                    if (useThousands) {
+                        counter.textContent = value.toLocaleString('es-CL') + suffix;
+                    } else {
+                        counter.textContent = value + suffix;
+                    }
                     if (progress < 1) requestAnimationFrame(update);
                 };
                 requestAnimationFrame(update);
@@ -826,12 +854,13 @@
             if (!track) return;
 
             let pos = 0;
+            let autoplayInterval;
 
             function getItemsVisible() {
                 const w = window.innerWidth;
                 if (w <= 768) return 1;
                 if (w <= 1024) return 2;
-                return 3;
+                return 4;
             }
 
             function getItemWidth() {
@@ -857,11 +886,22 @@
             function goPrev() {
                 pos = pos <= 0 ? maxPos() : pos - 1;
                 slide();
+                resetAutoplay();
             }
 
             function goNext() {
                 pos = pos >= maxPos() ? 0 : pos + 1;
                 slide();
+                resetAutoplay();
+            }
+
+            function startAutoplay() {
+                autoplayInterval = setInterval(goNext, 5000);
+            }
+
+            function resetAutoplay() {
+                clearInterval(autoplayInterval);
+                startAutoplay();
             }
 
             if (prevBtn) prevBtn.addEventListener('click', goPrev);
@@ -873,6 +913,8 @@
                 if (pos > maxPos()) pos = maxPos();
                 slide();
             });
+
+            startAutoplay();
         })();
 
         // ===== TILT ON SERVICE CARDS =====
@@ -888,14 +930,19 @@
             });
         });
 
-        // ===== BACK TO TOP =====
-        const backToTop = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            backToTop.classList.toggle('show', window.scrollY > 500);
-        });
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+        // ===== FLOATING AGENDAR BUTTON =====
+        (function() {
+            const floatingBtn = document.getElementById('floatingAgendar');
+            if (!floatingBtn) return;
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 400) {
+                    floatingBtn.classList.add('show');
+                } else {
+                    floatingBtn.classList.remove('show');
+                }
+            });
+        })();
         // ===== PHONE VALIDATION =====
         const phoneInput = document.getElementById('phone');
         const phoneHidden = document.getElementById('phoneHidden');
