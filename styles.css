@@ -1340,6 +1340,7 @@ img { max-width: 100%; height: auto; display: block; }
     position: relative;
     overflow: hidden;
     width: 100%;
+    background: white;
 }
 
 .experience {
@@ -1349,8 +1350,9 @@ img { max-width: 100%; height: auto; display: block; }
 .clients__track {
     display: flex;
     gap: 2rem;
-    animation: marquee 20s linear infinite;
+    animation: marquee 25s linear infinite;
     width: max-content;
+    will-change: transform;
 }
 
 .clients__track:hover {
@@ -1359,7 +1361,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 @keyframes marquee {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-66.667%); }
+    100% { transform: translateX(-50%); }
 }
 
 .client__logo {
@@ -1406,13 +1408,15 @@ img { max-width: 100%; height: auto; display: block; }
     padding: 0.5rem 0;
     position: relative;
     overflow: hidden;
+    background: white;
 }
 
 .alliances__track {
     display: flex;
     gap: 2rem;
-    animation: alliance-marquee 20s linear infinite;
+    animation: alliance-marquee 25s linear infinite;
     width: max-content;
+    will-change: transform;
 }
 
 .alliances__track:hover {
