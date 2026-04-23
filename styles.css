@@ -1448,7 +1448,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .alliance__logo img {
-    height: 45px;
+    height: 60px;
     width: auto;
     max-width: 180px;
     object-fit: contain;
@@ -1459,11 +1459,11 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Logos que necesitan más tamaño para ser legibles */
 .alliance__logo img[src*="shopify-partner"] {
-    height: 120px;
+    height: 80px;
 }
 
 .alliance__logo img[src*="Adverteren-op-Linkedin"] {
-    height: 120px;
+    height: 80px;
 }
 
 .alliance__logo:hover img {
